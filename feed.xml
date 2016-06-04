@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://log.sugarshin.net</id>
+    <title>log.sugarshin.net</title>
+    <updated>2016-06-04T14:31:44Z</updated>
+    <author>
+        <name>sugarshin | Shingo Sato</name>
+        <email>shinsugar@gmail.com</email>
+        <uri>https://sugarshin.net</uri>
+    </author>
+    <link rel="alternate" href="https://log.sugarshin.net"/>
+    <subtitle>sugarshin&apos;s blog</subtitle>
+    <rights>sugarshin | Shingo Sato All rights reserved.</rights>
+    <generator>Feed for Node.js</generator>
+    <entry>
+        <title type="html"><![CDATA[0番目]]></title>
+        <id>https://log.sugarshin.net/2016/04/30/num0/</id>
+        <link href="https://log.sugarshin.net/2016/04/30/num0/">
+        </link>
+        <updated>2016-04-30T15:00:00Z</updated>
+        <summary type="html"><![CDATA[# 4月fdjklsjfsldjflsdjfdlsj]]></summary>
+        <author>
+            <name>sugarshin | Shingo Sato</name>
+            <email>shinsugar@gmail.com</email>
+            <uri>https://sugarshin.net</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[タイトル１]]></title>
+        <id>https://log.sugarshin.net/2016/05/08/title1/</id>
+        <link href="https://log.sugarshin.net/2016/05/08/title1/">
+        </link>
+        <updated>2016-05-08T15:00:00Z</updated>
+        <summary type="html"><![CDATA[# fsdfsdfdsfsdfdfdsfds]]></summary>
+        <author>
+            <name>sugarshin | Shingo Sato</name>
+            <email>shinsugar@gmail.com</email>
+            <uri>https://sugarshin.net</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[２つめ]]></title>
+        <id>https://log.sugarshin.net/2016/05/09/222/</id>
+        <link href="https://log.sugarshin.net/2016/05/09/222/">
+        </link>
+        <updated>2016-05-09T15:00:00Z</updated>
+        <summary type="html"><![CDATA[# ２つめLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]]></summary>
+        <author>
+            <name>sugarshin | Shingo Sato</name>
+            <email>shinsugar@gmail.com</email>
+            <uri>https://sugarshin.net</uri>
+        </author>
+    </entry>
+</feed>
