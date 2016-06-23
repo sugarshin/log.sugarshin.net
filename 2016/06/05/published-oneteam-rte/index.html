@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><title>log.sugarshin.net</title><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Shingo Sato"><meta name="description" content="sugarshin's blog"><link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml"><link rel="alternate" type="application/rss+xml" title="RSS 2.0 Feed" href="/rss.xml"><link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png"><link rel="manifest" href="/manifest.json"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="log.sugarshin.net"><link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="log.sugarshin.net"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"><link rel="icon" type="image/png" sizes="230x230" href="/favicon-230x230.png"><link rel="shortcut icon" href="/favicon.ico"><meta name="msapplication-TileColor" content="#fff"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="msapplication-config" content="/browserconfig.xml"><meta property="twitter:image" content="/twitter.png"><meta property="og:image" content="/open-graph.png"></head><body><div style="display: none"><p>リッチテキストエディタ用の React コンポーネントを公開しました</p>
+<p>GitHub: <a href="https://github.com/oneteam-dev/oneteam-rte">https://github.com/oneteam-dev/oneteam-rte</a></p>
+<p>npm: <a href="https://www.npmjs.com/package/oneteam-rte">https://www.npmjs.com/package/oneteam-rte</a></p>
+<p>2016年6月現在のバージョンは <a href="https://github.com/oneteam-dev/oneteam-rte/releases/tag/v0.2.12">0.2.12</a> です</p>
+<p><img src="/assets/images/2016/06/05/published-oneteam-rte/oneteam-rte.gif" alt="oneteam-rte.gif"></p>
+<p>2016年2月に OSS として公開された Facebook 製のフレームワーク、 <a href="https://facebook.github.io/draft-js/">Draft.js</a> のラッパーです</p>
+<h2>使用例</h2>
+<pre><code class="language-js">import React from &#x27;react&#x27;;
+import { render } from &#x27;react-dom&#x27;;
+import RichTextEditor, { Toolbar, Body } from &#x27;oneteam-rte&#x27;;
+import &#x27;oneteam-rte/lib/base.css&#x27;;
+
+render((
+  &#x3C;RichTextEditor
+    initialHtml=&#x27;&#x3C;h1&#x3E;Initial content&#x3C;/h1&#x3E;&#x3C;div&#x3E;&#x3C;br /&#x3E;&#x3C;/div&#x3E;&#x3C;div&#x3E;oneteam-rte&#x3C;/div&#x3E;&#x27;&#x3E;
+    &#x3C;Toolbar /&#x3E;
+    &#x3C;Body /&#x3E;
+  &#x3C;/RichTextEditor&#x3E;
+), document.querySelector(&#x27;#app-root&#x27;));
+</code></pre>
+<h2>ツールバー</h2>
+<p>下記の Function が利用可能です</p>
+<ul>
+<li>画像挿入</li>
+<li>ファイル添付</li>
+<li>iframe 埋め込み</li>
+<li>リンク</li>
+<li>見出しレベル</li>
+<li>Bold</li>
+<li>Italic</li>
+<li>打ち消し線</li>
+<li>Blockquote</li>
+<li>チェックボックスリスト</li>
+<li>順不同リスト</li>
+<li>順序付きリスト</li>
+</ul>
+<h2>Draft.js</h2>
+<p>Draft.js は <a href="https://facebook.github.io/immutable-js/">Immutable.js</a> に依存していて、
+下記のようエディタの状態を管理する State object (EditorState) をこの Immutable.js のデータ構造を利用して管理しています</p>
+<ul>
+<li>エディタのテキストの内容</li>
+<li>カーソルの位置、状態</li>
+<li>テキストの装飾の状態</li>
+<li>Undo/redo</li>
+<li>etc...</li>
+</ul>
+<p>業務で利用しているため、仕様の都合上、素のままでは実現できないものもあり、結局 Draft.js に直接手を入れて利用しています</p>
+<p><a href="https://github.com/oneteam-dev/draft-js/tree/oneteam">https://github.com/oneteam-dev/draft-js/tree/oneteam</a></p>
+<h2>draft-js-export-html</h2>
+<p>EditorState からシリアライズした HTML の出力にも OSS を利用しました</p>
+<p><a href="https://github.com/sstur/draft-js-export-html">https://github.com/sstur/draft-js-export-html</a></p>
+<p>これも仕様の都合上、 fork して手を入れています</p>
+<p><a href="https://github.com/oneteam-dev/draft-js-export-html/tree/oneteam">https://github.com/oneteam-dev/draft-js-export-html/tree/oneteam</a></p>
+<hr>
+<p>PR 大歓迎です</p>
+<p>また、 <a href="https://ngs.io/">@ngs</a> 氏もコントリビュートしてくださっています</p>
+<p>@ngs 氏が Swift 版も公開していますのでそちらも要チェックです</p>
+<p><a href="https://github.com/oneteam-dev/SwiftyDraft">https://github.com/oneteam-dev/SwiftyDraft</a></p>
+</div><div id="app-root"></div><script src="/assets/app-21997b7b8f14cd667586.js"></script></body></html>
