@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://log.sugarshin.net</id>
     <title>log.sugarshin.net</title>
-    <updated>2016-07-09T01:00:15Z</updated>
+    <updated>2016-07-09T13:24:03Z</updated>
     <author>
         <name>sugarshin | Shingo Sato</name>
         <email>shinsugar@gmail.com</email>
@@ -18,7 +18,7 @@
         <link href="https://log.sugarshin.net/2016/06/05/published-oneteam-rte/">
         </link>
         <updated>2016-06-05T10:44:00Z</updated>
-        <summary type="html"><![CDATA[リッチテキストエディタ用の React コンポーネントを公開しましたGitHub: https://github.com/oneteam-dev/oneteam-rte]]></summary>
+        <summary type="html"><![CDATA[![Main](/assets/images/2016/06/05/published-oneteam-rte/main.png)リッチテキストエディタ用の React コンポーネントを公開しました]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
