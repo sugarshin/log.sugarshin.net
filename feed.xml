@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://log.sugarshin.net</id>
     <title>log.sugarshin.net</title>
-    <updated>2016-07-13T16:32:15Z</updated>
+    <updated>2016-07-13T17:00:03Z</updated>
     <author>
         <name>sugarshin | Shingo Sato</name>
         <email>shinsugar@gmail.com</email>
@@ -12,6 +12,19 @@
     <subtitle>sugarshin&apos;s blog</subtitle>
     <rights>sugarshin | Shingo Sato All rights reserved.</rights>
     <generator>Feed for Node.js</generator>
+    <entry>
+        <title type="html"><![CDATA[React と Redux なブログ運用をソフトウェア開発する話し]]></title>
+        <id>https://log.sugarshin.net/2016/07/14/blog-like-software-development/</id>
+        <link href="https://log.sugarshin.net/2016/07/14/blog-like-software-development/">
+        </link>
+        <updated>2016-07-14T00:52:00Z</updated>
+        <summary type="html"><![CDATA[![Main](/assets/images/2016/07/14/blog-like-software-development/main.png)継続的なソフトウェア開発プロセスを取り入れ、最低限の SEO は考慮しつつ無理矢理 React でブログを作ってみたという話しです。]]></summary>
+        <author>
+            <name>sugarshin | Shingo Sato</name>
+            <email>shinsugar@gmail.com</email>
+            <uri>https://sugarshin.net</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[リッチテキストエディタ oneteam-rte を公開しました]]></title>
         <id>https://log.sugarshin.net/2016/06/05/published-oneteam-rte/</id>
