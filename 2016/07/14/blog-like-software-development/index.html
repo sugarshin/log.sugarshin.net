@@ -132,21 +132,27 @@ describe(<span class="hljs-string">'Article suite'</span>, () =&gt; {
   });
 });</span></code></pre>
 <p>&#x30C6;&#x30B9;&#x30C8;&#x5468;&#x308A;&#x306F; Mocha, power-assert, babel-preset-power-assert, &#x306A;&#x3053;&#x3061;&#x3089;&#x3082;&#x5B9A;&#x756A;&#x306A;&#x611F;&#x3058;&#x3059;&#x3002;</p>
+<!-- textlint-disable -->
 <p>&#x304C;&#x3001;&#x307E;&#x3060;&#x30C6;&#x30B9;&#x30C8;&#x306F;&#x307B;&#x3068;&#x3093;&#x3069;&#x66F8;&#x3051;&#x3066;&#x307E;&#x305B;&#x3093;&#x3002;&#x3002;</p>
+<!-- textlint-enable -->
 <h2 id="webpack">webpack</h2>
 <p>webpack &#x306F;&#x3084;&#x308C;&#x308B;&#x3053;&#x3068;&#x3082;&#x591A;&#x304F;&#x30C9;&#x30AD;&#x30E5;&#x30E1;&#x30F3;&#x30C8;&#x3082;&#x8CA7;&#x5F31;&#x3067;&#x3059;&#x304C;&#x3001;&#x3053;&#x308C;&#x3058;&#x3083;&#x306A;&#x3044;&#x3068;&#x3044;&#x308D;&#x3044;&#x308D;&#x5B9F;&#x73FE;&#x3057;&#x306A;&#x3044;&#x3067;&#x3059;&#x306D;&#x3002;</p>
 <p>&#x666E;&#x901A;&#x306B; Babel, ESLint, <a href="https://github.com/rossPatton/stylint">Stylint</a> &#x306A;&#x611F;&#x3058;&#x3067;&#x3059;&#x3002;</p>
 <p>&#x307E;&#x305F;&#x3001; CSS Modules &#x306F; css-loader &#x3067;&#x5B9F;&#x73FE;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<!-- textlint-disable -->
 <pre><code class="hljs language-js"><span class="hljs-keyword">const</span> production = process.env.NODE_ENV === <span class="hljs-string">'production'</span>;
 <span class="hljs-keyword">const</span> localIdentName = production ? <span class="hljs-string">'[hash:base64:32]'</span> : <span class="hljs-string">'[path][name]__[local]___[hash:base64:8]'</span>;
 <span class="hljs-keyword">const</span> cssModules = <span class="hljs-string">`modules&amp;importLoaders=1&amp;localIdentName=<span class="hljs-subst">${localIdentName}</span>`</span>;
 <span class="hljs-keyword">const</span> cssLoader = production ? <span class="hljs-string">`css?minimize&amp;<span class="hljs-subst">${cssModules}</span>`</span> : <span class="hljs-string">`css?<span class="hljs-subst">${cssModules}</span>`</span>;</code></pre>
+<!-- textlint-enable -->
 <p>&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x3092;&#x610F;&#x8B58;&#x3057;&#x305F;&#x69CB;&#x6210;&#x306B;&#x3055;&#x3048;&#x3057;&#x3066;&#x3044;&#x308C;&#x3070;&#x3001;&#x3042;&#x308B;&#x7A0B;&#x5EA6;&#x96D1;&#x306B; CSS &#x3092;&#x66F8;&#x3044;&#x3066;&#x3082;&#x5927;&#x4E08;&#x592B;&#x3067;&#x3059;&#x3057;&#x3001;&#x9762;&#x5012;&#x306A; class &#x540D;&#x306E;&#x547D;&#x540D;&#x306B;&#x60A9;&#x3080;&#x5FC5;&#x8981;&#x3082;&#x306A;&#x3044;&#x306E;&#x3067;&#x3068;&#x3063;&#x3066;&#x3082;&#x6C17;&#x306B;&#x5165;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
 <p>Stylus &#x3067;&#x66F8;&#x3044;&#x3066; PostCSS &#x3067;&#x30DD;&#x30B9;&#x30C8;&#x30D7;&#x30ED;&#x30BB;&#x30B9;&#x3057;&#x3064;&#x3064;&#x6700;&#x7D42;&#x7684;&#x306B; style-loader &#x3067;&#x30A4;&#x30F3;&#x30E9;&#x30A4;&#x30F3;&#x5316;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<!-- textlint-disable -->
 <pre><code class="hljs language-js">{
   test: <span class="hljs-regexp">/\.styl$/</span>,
   loaders: [<span class="hljs-string">'style'</span>, cssLoader, <span class="hljs-string">'postcss'</span>, <span class="hljs-string">'stylus'</span>]
 }</code></pre>
+<!-- textlint-enable -->
 <p>CSS &#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x7BA1;&#x7406;&#x3092;&#x610F;&#x8B58;&#x3057;&#x306A;&#x304F;&#x3066;&#x3044;&#x3044;&#x306E;&#x3067;&#x697D;&#x3067;&#x3059;&#x3002;</p>
 <h2 id="&#x958B;&#x767A;&#x3001;&#x57F7;&#x7B46;&#x30D7;&#x30ED;&#x30BB;&#x30B9;">&#x958B;&#x767A;&#x3001;&#x57F7;&#x7B46;&#x30D7;&#x30ED;&#x30BB;&#x30B9;</h2>
 <p><code>npm start</code> &#x3067; &#x958B;&#x767A;&#x30B5;&#x30FC;&#x30D0;&#x304C;&#x7ACB;&#x3061;&#x4E0A;&#x304C;&#x308A;&#x307E;&#x3059;&#x3002;</p>
@@ -156,8 +162,35 @@ describe(<span class="hljs-string">'Article suite'</span>, () =&gt; {
 <p>&#x6587;&#x7AE0;&#x306E;&#x30D5;&#x30A9;&#x30FC;&#x30DE;&#x30C3;&#x30C8;&#x306A;&#x3069;&#x306F;&#x6C17;&#x5206;&#x306B;&#x3088;&#x3063;&#x3066;&#x5909;&#x308F;&#x308B;&#x5834;&#x5408;&#x3082;&#x3042;&#x3063;&#x305F;&#x308A;&#x3001;&#x6587;&#x7AE0;&#x6821;&#x6B63;&#x306F;&#x3069;&#x3046;&#x3057;&#x3066;&#x3082;&#x30D2;&#x30E5;&#x30FC;&#x30DE;&#x30F3;&#x30A8;&#x30E9;&#x30FC;&#x304C;&#x8D77;&#x3053;&#x308B;&#x306E;&#x3067;&#x3053;&#x3046;&#x3044;&#x3046;&#x30C4;&#x30FC;&#x30EB;&#x306B;&#x4E38;&#x6295;&#x3052;&#x3059;&#x308B;&#x306E;&#x3082;&#x6709;&#x308A;&#x3067;&#x3059;&#x306D;&#x3002;</p>
 <p>&#x63A1;&#x7528;&#x30EB;&#x30FC;&#x30EB;&#x306F;&#x4E00;&#x65E6;&#x3053;&#x3093;&#x306A;&#x611F;&#x3058;&#x3067;&#x3059;&#x3002;</p>
 <pre><code class="hljs language-json">{
+  <span class="hljs-attr">"filters"</span>: {
+    <span class="hljs-attr">"comments"</span>: <span class="hljs-literal">true</span>
+  },
   <span class="hljs-attr">"rules"</span>: {
-    <span class="hljs-attr">"preset-ja-technical-writing"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"sentence-length"</span>: {
+      <span class="hljs-attr">"max"</span>: <span class="hljs-number">140</span>
+    },
+    <span class="hljs-attr">"max-comma"</span>: {
+      <span class="hljs-attr">"max"</span>: <span class="hljs-number">3</span>
+    },
+    <span class="hljs-attr">"max-ten"</span>: {
+      <span class="hljs-attr">"max"</span>: <span class="hljs-number">3</span>
+    },
+    <span class="hljs-attr">"max-kanji-continuous-len"</span>: {
+      <span class="hljs-attr">"max"</span>: <span class="hljs-number">5</span>
+    },
+    <span class="hljs-attr">"no-mix-dearu-desumasu"</span>: {
+      <span class="hljs-attr">"preferInHeader"</span>: <span class="hljs-string">""</span>,
+      <span class="hljs-attr">"preferInBody"</span>: <span class="hljs-string">"ですます"</span>,
+      <span class="hljs-attr">"preferInList"</span>: <span class="hljs-string">"である"</span>,
+      <span class="hljs-attr">"strict"</span>: <span class="hljs-literal">true</span>
+    },
+    <span class="hljs-attr">"no-double-negative-ja"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"no-dropping-the-ra"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"no-doubled-conjunctive-particle-ga"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"no-hankaku-kana"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"ja-no-successive-word"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"ja-no-abusage"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"preset-jtf-style"</span>: <span class="hljs-literal">true</span>,
     <span class="hljs-attr">"eslint"</span>: {
       <span class="hljs-attr">"configFile"</span>: <span class="hljs-string">".eslintrc"</span>
     }
@@ -169,7 +202,9 @@ describe(<span class="hljs-string">'Article suite'</span>, () =&gt; {
 <h2 id="&#x30D3;&#x30EB;&#x30C9;&#x3001;&#x30C7;&#x30D7;&#x30ED;&#x30A4;">&#x30D3;&#x30EB;&#x30C9;&#x3001;&#x30C7;&#x30D7;&#x30ED;&#x30A4;</h2>
 <p>&#x30DB;&#x30B9;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x306F; GitHub Pages &#x3067;&#x3059;&#x3002;</p>
 <p>&#x306A;&#x306E;&#x3067;&#x3001; SEO &#x306E;&#x305F;&#x3081;&#x306B;&#x3082;&#x5404;&#x8A18;&#x4E8B;&#x3054;&#x3068;&#x306B;&#x9759;&#x7684;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x7528;&#x610F;&#x3057;&#x306A;&#x3044;&#x3068;&#x3044;&#x3051;&#x306A;&#x3044;&#x306E;&#x3067;&#x3059;&#x304C;&#x3001;</p>
+<!-- textlint-disable -->
 <p>&#x5F53;&#x521D;&#x306F; <code>ReactDOMServer.renderToStaticMarkup</code> &#x3067;&#x30D3;&#x30EB;&#x30C9;&#x6642;&#x306B;&#x3001;&#x30B5;&#x30FC;&#x30D0;&#x30FC;&#x30B5;&#x30A4;&#x30C9;&#x30EC;&#x30F3;&#x30C0;&#x30EA;&#x30F3;&#x30B0;&#x30E9;&#x30A4;&#x30AF;&#x306A;&#x611F;&#x3058;&#x3067;&#x5410;&#x3044;&#x3066;&#x3001;&#x30EC;&#x30F3;&#x30C0;&#x30EA;&#x30F3;&#x30B0;&#x6E08;&#x307F;&#x306E; DOM &#x3068;&#x30B9;&#x30E0;&#x30FC;&#x30BA;&#x306B;&#x9023;&#x643A;&#x3067;&#x304D;&#x308B;&#x4E88;&#x5B9A;&#x3067;&#x3057;&#x305F;&#x304C;&#x3046;&#x307E;&#x304F;&#x3044;&#x304B;&#x305A;&#x3002;&#x3002;</p>
+<!-- textlint-enable -->
 <p>&#x7D50;&#x5C40;&#x3001; <a href="https://github.com/pugjs/pug">Pug</a> &#x3067;&#x5404;&#x30DA;&#x30FC;&#x30B8;&#x5206;&#x3001;&#x5185;&#x5BB9;&#x3092;&#x96D1;&#x306B;&#x30EC;&#x30F3;&#x30C0;&#x30EA;&#x30F3;&#x30B0;&#x3057;&#x3066;&#x5185;&#x5BB9;&#x90E8;&#x5206;&#x306F; <code>style=&quot;display: none;&quot;</code> &#x3057;&#x3064;&#x3064;&#x751F;&#x6210;&#x3059;&#x308B;&#x3088;&#x3046;&#x306B;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x7B11;</p>
 <p>&#x3053;&#x308C;&#x3067;&#x5404;&#x30DA;&#x30FC;&#x30B8;&#x5206;&#x30AF;&#x30ED;&#x30FC;&#x30EB;&#x3082;&#x3055;&#x308C;&#x3001;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x5F8C;&#x306F; SPA &#x3068;&#x3057;&#x3066;&#x52D5;&#x4F5C;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 <p>Google Search Console &#x3067;&#x3082;&#x4ECA;&#x306E;&#x3068;&#x3053;&#x308D;&#x7279;&#x306B;&#x554F;&#x984C;&#x8996;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x305B;&#x3093;&#x3002;</p>
@@ -187,4 +222,4 @@ describe(<span class="hljs-string">'Article suite'</span>, () =&gt; {
 <li>SEO &#x3092;&#x3082;&#x3046;&#x5C11;&#x3057;&#x304C;&#x3093;&#x3070;&#x308B;</li>
 <li>&#x3082;&#x308D;&#x3082;&#x308D;&#x6574;&#x7406;&#x3001;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x306B;&#x3057;&#x3066; OSS &#x5316;&#xFF08;React static blog generator ?&#xFF09;&#x3057;&#x305F;&#x3044;</li>
 </ul>
-</div><div id="app-root"></div><script src="/assets/app-df6df4fb34ad67fc2fb0.js"></script></body></html>
+</div><div id="app-root"></div><script src="/assets/app-9009b2bfc4e0a5564c14.js"></script></body></html>
