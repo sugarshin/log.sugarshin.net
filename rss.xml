@@ -4,7 +4,7 @@
         <title>log.sugarshin.net</title>
         <description>sugarshin&apos;s blog</description>
         <link>https://log.sugarshin.net</link>
-        <lastBuildDate>Sat, 16 Jul 2016 02:11:21 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 16 Jul 2016 07:06:09 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <copyright>sugarshin | Shingo Sato All rights reserved.</copyright>
         <generator>Feed for Node.js</generator>
@@ -13,7 +13,7 @@
             <link>https://log.sugarshin.net/2016/07/14/blog-like-software-development/</link>
             <guid>https://log.sugarshin.net/2016/07/14/blog-like-software-development/</guid>
             <pubDate>Thu, 14 Jul 2016 00:52:00 GMT</pubDate>
-            <description><![CDATA[![Main](/assets/images/2016/07/14/blog-like-software-development/main.png)継続的なソフトウェア開発プロセスを取り入れ、最低限の SEO は考慮しつつ無理矢理 React でブログを作ってみたという話しです。]]></description>
+            <description><![CDATA[継続的なソフトウェア開発プロセスを取り入れ、最低限の SEO は考慮しつつ無理矢理 React でブログを作ってみたという話しです。---個人ブログ開設にあたり何を使おうか迷いまして、いろいろ考えた結果結局 React と Redux で自作しました。]]></description>
             <author>
                 <name>sugarshin | Shingo Sato</name>
                 <email>shinsugar@gmail.com</email>
@@ -25,7 +25,7 @@
             <link>https://log.sugarshin.net/2016/06/05/published-oneteam-rte/</link>
             <guid>https://log.sugarshin.net/2016/06/05/published-oneteam-rte/</guid>
             <pubDate>Sun, 05 Jun 2016 10:44:00 GMT</pubDate>
-            <description><![CDATA[![Main](/assets/images/2016/06/05/published-oneteam-rte/main.png)リッチテキストエディタ用の React コンポーネントを公開しました。]]></description>
+            <description><![CDATA[リッチテキストエディタ用の React コンポーネントを公開しました。GitHub: https://github.com/oneteam-dev/oneteam-rtenpm: https://www.npmjs.com/package/oneteam-rte]]></description>
             <author>
                 <name>sugarshin | Shingo Sato</name>
                 <email>shinsugar@gmail.com</email>
