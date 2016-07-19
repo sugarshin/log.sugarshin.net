@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://log.sugarshin.net</id>
     <title>log.sugarshin.net</title>
-    <updated>2016-07-18T09:03:05Z</updated>
+    <updated>2016-07-19T15:20:34Z</updated>
     <author>
         <name>sugarshin | Shingo Sato</name>
         <email>shinsugar@gmail.com</email>
-        <uri>https://sugarshin.net</uri>
+        <uri>https://sugarshin.net/</uri>
     </author>
     <link rel="alternate" href="https://log.sugarshin.net"/>
     <subtitle>sugarshin&apos;s blog</subtitle>
@@ -22,7 +22,7 @@
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
-            <uri>https://sugarshin.net</uri>
+            <uri>https://sugarshin.net/</uri>
         </author>
     </entry>
     <entry>
@@ -35,7 +35,7 @@
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
-            <uri>https://sugarshin.net</uri>
+            <uri>https://sugarshin.net/</uri>
         </author>
     </entry>
 </feed>
