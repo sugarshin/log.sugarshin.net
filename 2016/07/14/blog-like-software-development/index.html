@@ -97,22 +97,22 @@
 <p>Markdown で書いた記事を XHR で取ってきて remark でレンダリングしています。</p>
 <p><a href="">remark</a> はプラガブルな Markdown パーサ &#x26; コンパイラです。</p>
 <pre><code class="hljs language-json">{
-  <span class="hljs-attr">&#x22;rehype-highlight&#x22;</span>: <span class="hljs-string">&#x22;~1.0.0&#x22;</span>,
-  <span class="hljs-attr">&#x22;rehype-stringify&#x22;</span>: <span class="hljs-string">&#x22;~1.0.0&#x22;</span>,
-  <span class="hljs-attr">&#x22;remark-parse&#x22;</span>: <span class="hljs-string">&#x22;~1.0.0&#x22;</span>,
-  <span class="hljs-attr">&#x22;remark-rehype&#x22;</span>: <span class="hljs-string">&#x22;~1.0.0&#x22;</span>,
-  <span class="hljs-attr">&#x22;remark-toc&#x22;</span>: <span class="hljs-string">&#x22;~3.0.1&#x22;</span>,
-  <span class="hljs-attr">&#x22;remark-yaml-config&#x22;</span>: <span class="hljs-string">&#x22;~3.0.2&#x22;</span>,
-  <span class="hljs-attr">&#x22;unified&#x22;</span>: <span class="hljs-string">&#x22;~4.1.2&#x22;</span>
+  <span class="hljs-attr">"rehype-highlight"</span>: <span class="hljs-string">"~1.0.0"</span>,
+  <span class="hljs-attr">"rehype-stringify"</span>: <span class="hljs-string">"~1.0.0"</span>,
+  <span class="hljs-attr">"remark-parse"</span>: <span class="hljs-string">"~1.0.0"</span>,
+  <span class="hljs-attr">"remark-rehype"</span>: <span class="hljs-string">"~1.0.0"</span>,
+  <span class="hljs-attr">"remark-toc"</span>: <span class="hljs-string">"~3.0.1"</span>,
+  <span class="hljs-attr">"remark-yaml-config"</span>: <span class="hljs-string">"~3.0.2"</span>,
+  <span class="hljs-attr">"unified"</span>: <span class="hljs-string">"~4.1.2"</span>
 }
 </code></pre>
-<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> unified = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;unified&#x27;</span>);
-<span class="hljs-keyword">const</span> parse = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;remark-parse&#x27;</span>);
-<span class="hljs-keyword">const</span> toc = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;remark-toc&#x27;</span>);
-<span class="hljs-keyword">const</span> yamlConfig = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;remark-yaml-config&#x27;</span>);
-<span class="hljs-keyword">const</span> remarkToRehype = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;remark-rehype&#x27;</span>);
-<span class="hljs-keyword">const</span> highlight = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;rehype-highlight&#x27;</span>);
-<span class="hljs-keyword">const</span> stringify = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;rehype-stringify&#x27;</span>);
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> unified = <span class="hljs-built_in">require</span>(<span class="hljs-string">'unified'</span>);
+<span class="hljs-keyword">const</span> parse = <span class="hljs-built_in">require</span>(<span class="hljs-string">'remark-parse'</span>);
+<span class="hljs-keyword">const</span> toc = <span class="hljs-built_in">require</span>(<span class="hljs-string">'remark-toc'</span>);
+<span class="hljs-keyword">const</span> yamlConfig = <span class="hljs-built_in">require</span>(<span class="hljs-string">'remark-yaml-config'</span>);
+<span class="hljs-keyword">const</span> remarkToRehype = <span class="hljs-built_in">require</span>(<span class="hljs-string">'remark-rehype'</span>);
+<span class="hljs-keyword">const</span> highlight = <span class="hljs-built_in">require</span>(<span class="hljs-string">'rehype-highlight'</span>);
+<span class="hljs-keyword">const</span> stringify = <span class="hljs-built_in">require</span>(<span class="hljs-string">'rehype-stringify'</span>);
 
 unified()
   .use(parse)
@@ -121,19 +121,19 @@ unified()
   .use(remarkToRehype)
   .use(highlight)
   .use(stringify)
-  .process(<span class="hljs-string">&#x27;# markdown&#x27;</span>);
+  .process(<span class="hljs-string">'# markdown'</span>);
 </code></pre>
 <h3 id="enzyme">Enzyme</h3>
 <p>React コンポーネントのテストは <a href="https://github.com/airbnb/enzyme">Enzyme</a> を使ってみました。普通に DOM を触っている感じでテストが書けるので面白いかなと思います。</p>
-<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> assert <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;assert&#x27;</span>;
-<span class="hljs-keyword">import</span> { shallow } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;enzyme&#x27;</span>;
-<span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+<pre><code class="hljs language-js"><span class="hljs-keyword">import</span> assert <span class="hljs-keyword">from</span> <span class="hljs-string">'assert'</span>;
+<span class="hljs-keyword">import</span> { shallow } <span class="hljs-keyword">from</span> <span class="hljs-string">'enzyme'</span>;
+<span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 
-describe(<span class="hljs-string">&#x27;Article suite&#x27;</span>, () =&#x3E; {
-  <span class="hljs-keyword">const</span> Article = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;../../src/components/Article&#x27;</span>).default;
-  it(<span class="hljs-string">&#x27;contains spec with an expectation&#x27;</span>, () =&#x3E; {
-    <span class="hljs-keyword">const</span> markdown = <span class="hljs-string">&#x27;&#x27;</span>;
-    assert(shallow(<span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">Article</span> <span class="hljs-attr">article</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">markdown</span> }} /&#x3E;</span>).is(&#x27;.markdown-body&#x27;));
+describe(<span class="hljs-string">'Article suite'</span>, () => {
+  <span class="hljs-keyword">const</span> Article = <span class="hljs-built_in">require</span>(<span class="hljs-string">'../../src/components/Article'</span>).default;
+  it(<span class="hljs-string">'contains spec with an expectation'</span>, () => {
+    <span class="hljs-keyword">const</span> markdown = <span class="hljs-string">''</span>;
+    assert(shallow(<span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">Article</span> <span class="hljs-attr">article</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">markdown</span> }} /></span>).is('.markdown-body'));
   });
 });
 </span></code></pre>
@@ -142,16 +142,16 @@ describe(<span class="hljs-string">&#x27;Article suite&#x27;</span>, () =&#x3E; 
 <h2 id="webpack">webpack</h2>
 <p>webpack はやれることが多くドキュメントは充実しているとは言い難いですが、これじゃないといろいろ実現しないですね。</p>
 <p>また、 CSS Modules は css-loader で実現しています。</p>
-<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> production = process.env.NODE_ENV === <span class="hljs-string">&#x27;production&#x27;</span>;
-<span class="hljs-keyword">const</span> localIdentName = production ? <span class="hljs-string">&#x27;[hash:base64:32]&#x27;</span> : <span class="hljs-string">&#x27;[path][name]__[local]___[hash:base64:8]&#x27;</span>;
-<span class="hljs-keyword">const</span> cssModules = <span class="hljs-string">&#x60;modules&#x26;importLoaders=1&#x26;localIdentName=<span class="hljs-subst">${localIdentName}</span>&#x60;</span>;
-<span class="hljs-keyword">const</span> cssLoader = production ? <span class="hljs-string">&#x60;css?minimize&#x26;<span class="hljs-subst">${cssModules}</span>&#x60;</span> : <span class="hljs-string">&#x60;css?<span class="hljs-subst">${cssModules}</span>&#x60;</span>;
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> production = process.env.NODE_ENV === <span class="hljs-string">'production'</span>;
+<span class="hljs-keyword">const</span> localIdentName = production ? <span class="hljs-string">'[hash:base64:32]'</span> : <span class="hljs-string">'[path][name]__[local]___[hash:base64:8]'</span>;
+<span class="hljs-keyword">const</span> cssModules = <span class="hljs-string">`modules&#x26;importLoaders=1&#x26;localIdentName=<span class="hljs-subst">${localIdentName}</span>`</span>;
+<span class="hljs-keyword">const</span> cssLoader = production ? <span class="hljs-string">`css?minimize&#x26;<span class="hljs-subst">${cssModules}</span>`</span> : <span class="hljs-string">`css?<span class="hljs-subst">${cssModules}</span>`</span>;
 </code></pre>
 <p>コンポーネントを意識した構成にさえしていれば、ある程度雑に CSS を書いても大丈夫ですし、面倒な class 命名に悩む必要もないのでとっても気に入っています。</p>
 <p>Stylus で書いて PostCSS でポストプロセスしつつ最終的に style-loader でインライン化しています。</p>
 <pre><code class="hljs language-js">{
   test: <span class="hljs-regexp">/\.styl$/</span>,
-  loaders: [<span class="hljs-string">&#x27;style&#x27;</span>, <span class="hljs-string">&#x27;css&#x27;</span>, <span class="hljs-string">&#x27;postcss&#x27;</span>, <span class="hljs-string">&#x27;stylus&#x27;</span>]
+  loaders: [<span class="hljs-string">'style'</span>, <span class="hljs-string">'css'</span>, <span class="hljs-string">'postcss'</span>, <span class="hljs-string">'stylus'</span>]
 }
 </code></pre>
 <p>CSS ファイルの管理を意識しなくていいので楽です。</p>
@@ -165,37 +165,37 @@ describe(<span class="hljs-string">&#x27;Article suite&#x27;</span>, () =&#x3E; 
 <p>こちらもビルド時にその他リントと一緒に走ります。</p>
 <p>採用ルールは一旦こんな感じです。</p>
 <pre><code class="hljs language-json">{
-  <span class="hljs-attr">&#x22;filters&#x22;</span>: {
-    <span class="hljs-attr">&#x22;comments&#x22;</span>: <span class="hljs-literal">true</span>
+  <span class="hljs-attr">"filters"</span>: {
+    <span class="hljs-attr">"comments"</span>: <span class="hljs-literal">true</span>
   },
-  <span class="hljs-attr">&#x22;rules&#x22;</span>: {
-    <span class="hljs-attr">&#x22;sentence-length&#x22;</span>: {
-      <span class="hljs-attr">&#x22;max&#x22;</span>: <span class="hljs-number">140</span>
+  <span class="hljs-attr">"rules"</span>: {
+    <span class="hljs-attr">"sentence-length"</span>: {
+      <span class="hljs-attr">"max"</span>: <span class="hljs-number">140</span>
     },
-    <span class="hljs-attr">&#x22;max-comma&#x22;</span>: {
-      <span class="hljs-attr">&#x22;max&#x22;</span>: <span class="hljs-number">3</span>
+    <span class="hljs-attr">"max-comma"</span>: {
+      <span class="hljs-attr">"max"</span>: <span class="hljs-number">3</span>
     },
-    <span class="hljs-attr">&#x22;max-ten&#x22;</span>: {
-      <span class="hljs-attr">&#x22;max&#x22;</span>: <span class="hljs-number">3</span>
+    <span class="hljs-attr">"max-ten"</span>: {
+      <span class="hljs-attr">"max"</span>: <span class="hljs-number">3</span>
     },
-    <span class="hljs-attr">&#x22;max-kanji-continuous-len&#x22;</span>: {
-      <span class="hljs-attr">&#x22;max&#x22;</span>: <span class="hljs-number">5</span>
+    <span class="hljs-attr">"max-kanji-continuous-len"</span>: {
+      <span class="hljs-attr">"max"</span>: <span class="hljs-number">5</span>
     },
-    <span class="hljs-attr">&#x22;no-mix-dearu-desumasu&#x22;</span>: {
-      <span class="hljs-attr">&#x22;preferInHeader&#x22;</span>: <span class="hljs-string">&#x22;&#x22;</span>,
-      <span class="hljs-attr">&#x22;preferInBody&#x22;</span>: <span class="hljs-string">&#x22;ですます&#x22;</span>,
-      <span class="hljs-attr">&#x22;preferInList&#x22;</span>: <span class="hljs-string">&#x22;である&#x22;</span>,
-      <span class="hljs-attr">&#x22;strict&#x22;</span>: <span class="hljs-literal">true</span>
+    <span class="hljs-attr">"no-mix-dearu-desumasu"</span>: {
+      <span class="hljs-attr">"preferInHeader"</span>: <span class="hljs-string">""</span>,
+      <span class="hljs-attr">"preferInBody"</span>: <span class="hljs-string">"ですます"</span>,
+      <span class="hljs-attr">"preferInList"</span>: <span class="hljs-string">"である"</span>,
+      <span class="hljs-attr">"strict"</span>: <span class="hljs-literal">true</span>
     },
-    <span class="hljs-attr">&#x22;no-double-negative-ja&#x22;</span>: <span class="hljs-literal">true</span>,
-    <span class="hljs-attr">&#x22;no-dropping-the-ra&#x22;</span>: <span class="hljs-literal">true</span>,
-    <span class="hljs-attr">&#x22;no-doubled-conjunctive-particle-ga&#x22;</span>: <span class="hljs-literal">true</span>,
-    <span class="hljs-attr">&#x22;no-hankaku-kana&#x22;</span>: <span class="hljs-literal">true</span>,
-    <span class="hljs-attr">&#x22;ja-no-successive-word&#x22;</span>: <span class="hljs-literal">true</span>,
-    <span class="hljs-attr">&#x22;ja-no-abusage&#x22;</span>: <span class="hljs-literal">true</span>,
-    <span class="hljs-attr">&#x22;preset-jtf-style&#x22;</span>: <span class="hljs-literal">true</span>,
-    <span class="hljs-attr">&#x22;eslint&#x22;</span>: {
-      <span class="hljs-attr">&#x22;configFile&#x22;</span>: <span class="hljs-string">&#x22;.eslintrc&#x22;</span>
+    <span class="hljs-attr">"no-double-negative-ja"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"no-dropping-the-ra"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"no-doubled-conjunctive-particle-ga"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"no-hankaku-kana"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"ja-no-successive-word"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"ja-no-abusage"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"preset-jtf-style"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"eslint"</span>: {
+      <span class="hljs-attr">"configFile"</span>: <span class="hljs-string">".eslintrc"</span>
     }
   }
 }
@@ -205,7 +205,7 @@ describe(<span class="hljs-string">&#x27;Article suite&#x27;</span>, () =&#x3E; 
 <p>ホスティングは GitHub Pages です。</p>
 <p>なので、 SEO のためにも各記事ごとに静的ファイルを用意しないといけないのですが、</p>
 <p>当初は <code>ReactDOMServer.renderToString</code> でビルド時に、サーバーサイドレンダリングライクな感じで吐いて、クライアントでレンダリング済みの DOM と React がスムーズに連携できる予定でしたがうまくいかず。。</p>
-<p>結局、 <a href="https://github.com/pugjs/pug">Pug</a> で各ページ分、内容を雑にレンダリングして内容部分は <code>style=&#x22;display: none;&#x22;</code> しつつ生成するようにしています。笑</p>
+<p>結局、 <a href="https://github.com/pugjs/pug">Pug</a> で各ページ分、内容を雑にレンダリングして内容部分は <code>style="display: none;"</code> しつつ生成するようにしています。笑</p>
 <p>これで各ページ分クロールもされ、アクセス後は SPA として動作します。</p>
 <p>Google Search Console でも今のところ特に問題視されていません。</p>
 <p>その他、 sitemap.xml や RSS, Atom フィード用の xml 、 Favicon, OG 画像等もビルド時に script でつくっています。</p>
@@ -221,4 +221,4 @@ describe(<span class="hljs-string">&#x27;Article suite&#x27;</span>, () =&#x3E; 
 <li><code>ReactDOMServer.renderToString</code> でスマートにしたい</li>
 <li>SEO をもう少しがんばる</li>
 <li>もろもろ整理、パッケージにして OSS 化（React static blog generator ?）したい</li>
-</ul></div><div id="app-root"></div><script src="/assets/app-0f7e4f6f877983e4a2ca.js"></script></body></html>
+</ul></div><div id="app-root"></div><script src="/assets/app-a41d751c40ae4e220e1c.js"></script></body></html>
