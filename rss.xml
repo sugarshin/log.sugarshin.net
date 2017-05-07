@@ -4,7 +4,7 @@
         <title>log.sugarshin.net</title>
         <link>https://log.sugarshin.net</link>
         <description>sugarshin&apos;s blog</description>
-        <lastBuildDate>Sat, 06 May 2017 16:26:50 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 07 May 2017 01:57:40 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <copyright>sugarshin | Shingo Sato All rights reserved.</copyright>
@@ -13,7 +13,7 @@
             <link>https://log.sugarshin.net/2017/04/30/monthly-report/</link>
             <guid>https://log.sugarshin.net/2017/04/30/monthly-report/</guid>
             <pubDate>Sun, 30 Apr 2017 00:00:00 GMT</pubDate>
-            <description><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ---Pull requestsmerged Fix files · Pull Request 3 · sugarshin/draft-js-modifiers  created_at: 2017-04-29T06:07:53Z]]></description>
+            <description><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ---Pull requestsmerged Fix files · Pull Request 3 · sugarshin/draft-js-modifiers  merged_at: 2017-04-29T06:07:53Z]]></description>
             <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
         </item>
         <item>
