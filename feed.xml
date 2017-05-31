@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://log.sugarshin.net</id>
     <title>log.sugarshin.net</title>
-    <updated>2017-05-31T13:56:43Z</updated>
+    <updated>2017-05-31T22:49:05Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>sugarshin | Shingo Sato</name>
@@ -17,7 +17,7 @@
         <id>https://log.sugarshin.net/2017/05/07/automation-monthly-report/</id>
         <link href="https://log.sugarshin.net/2017/05/07/automation-monthly-report/">
         </link>
-        <updated>2017-05-07T10:17:00Z</updated>
+        <updated>2017-05-07T01:17:00Z</updated>
         <summary type="html"><![CDATA[月ごとに、 OSS コントリビューションや GitHub 上での活動をまとめたレポートの当ブログへの投稿を自動化しました。---なかなかブログも書けないので、これから GitHub の月報を投稿していくことにしました。]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
@@ -30,7 +30,7 @@
         <id>https://log.sugarshin.net/2017/04/30/monthly-report/</id>
         <link href="https://log.sugarshin.net/2017/04/30/monthly-report/">
         </link>
-        <updated>2017-04-30T00:00:00Z</updated>
+        <updated>2017-04-29T15:00:00Z</updated>
         <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ---Pull requestsmerged Fix files · Pull Request 3 · sugarshin/draft-js-modifiers  merged_at: 2017-04-29T06:07:53Z]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
@@ -43,7 +43,7 @@
         <id>https://log.sugarshin.net/2016/07/14/blog-like-software-development/</id>
         <link href="https://log.sugarshin.net/2016/07/14/blog-like-software-development/">
         </link>
-        <updated>2016-07-14T00:52:00Z</updated>
+        <updated>2016-07-13T15:52:00Z</updated>
         <summary type="html"><![CDATA[継続的なソフトウェア開発プロセスを取り入れ、最低限の SEO は考慮しつつ無理矢理 React でブログを作ってみたという話しです。---個人ブログ開設にあたり何を使おうか迷いまして、いろいろ考えた結果結局 React と Redux で自作しました。]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
@@ -56,7 +56,7 @@
         <id>https://log.sugarshin.net/2016/06/05/published-oneteam-rte/</id>
         <link href="https://log.sugarshin.net/2016/06/05/published-oneteam-rte/">
         </link>
-        <updated>2016-06-05T10:44:00Z</updated>
+        <updated>2016-06-05T01:44:00Z</updated>
         <summary type="html"><![CDATA[リッチテキストエディタ用の React コンポーネントを公開しました。GitHub: https://github.com/oneteam-dev/oneteam-rtenpm: https://www.npmjs.com/package/oneteam-rte]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
