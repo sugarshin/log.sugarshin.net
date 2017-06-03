@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://log.sugarshin.net</id>
     <title>log.sugarshin.net</title>
-    <updated>2017-06-01T16:28:08Z</updated>
+    <updated>2017-06-03T15:14:56Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>sugarshin | Shingo Sato</name>
@@ -18,7 +18,7 @@
         <link href="https://log.sugarshin.net/2017/05/31/monthly-report-1705/">
         </link>
         <updated>2017-05-30T15:36:00Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ---Make private repository publicsugarshin/sugarshin-hubot  description: undefined]]></summary>
+        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ***Make private repository publicsugarshin/sugarshin-hubot  description: undefined]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -31,7 +31,7 @@
         <link href="https://log.sugarshin.net/2017/05/07/automation-monthly-report/">
         </link>
         <updated>2017-05-07T01:17:00Z</updated>
-        <summary type="html"><![CDATA[月ごとに、 OSS コントリビューションや GitHub 上での活動をまとめたレポートの当ブログへの投稿を自動化しました。---なかなかブログも書けないので、これから GitHub の月報を投稿していくことにしました。]]></summary>
+        <summary type="html"><![CDATA[月ごとに、 OSS コントリビューションや GitHub 上での活動をまとめたレポートの当ブログへの投稿を自動化しました。***なかなかブログも書けないので、これから GitHub の月報を投稿していくことにしました。]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -44,7 +44,7 @@
         <link href="https://log.sugarshin.net/2017/04/30/monthly-report-1704/">
         </link>
         <updated>2017-04-29T15:00:00Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ---Pull requestsmerged Fix files · Pull Request 3 · sugarshin/draft-js-modifiers  merged_at: 2017-04-29T06:07:53Z]]></summary>
+        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ***Pull requestsmerged Fix files · Pull Request 3 · sugarshin/draft-js-modifiers  merged_at: 2017-04-29T06:07:53Z]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -57,7 +57,7 @@
         <link href="https://log.sugarshin.net/2016/07/14/blog-like-software-development/">
         </link>
         <updated>2016-07-13T15:52:00Z</updated>
-        <summary type="html"><![CDATA[継続的なソフトウェア開発プロセスを取り入れ、最低限の SEO は考慮しつつ無理矢理 React でブログを作ってみたという話しです。---個人ブログ開設にあたり何を使おうか迷いまして、いろいろ考えた結果結局 React と Redux で自作しました。]]></summary>
+        <summary type="html"><![CDATA[継続的なソフトウェア開発プロセスを取り入れ、最低限の SEO は考慮しつつ無理矢理 React でブログを作ってみたという話しです。***個人ブログ開設にあたり何を使おうか迷いまして、いろいろ考えた結果結局 React と Redux で自作しました。]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>

@@ -4,7 +4,7 @@
         <title>log.sugarshin.net</title>
         <link>https://log.sugarshin.net</link>
         <description>sugarshin&apos;s blog</description>
-        <lastBuildDate>Thu, 01 Jun 2017 16:28:08 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 03 Jun 2017 15:14:56 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <copyright>sugarshin | Shingo Sato All rights reserved.</copyright>
@@ -13,7 +13,7 @@
             <link>https://log.sugarshin.net/2017/05/31/monthly-report-1705/</link>
             <guid>https://log.sugarshin.net/2017/05/31/monthly-report-1705/</guid>
             <pubDate>Tue, 30 May 2017 15:36:00 GMT</pubDate>
-            <description><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ---Make private repository publicsugarshin/sugarshin-hubot  description: undefined]]></description>
+            <description><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ***Make private repository publicsugarshin/sugarshin-hubot  description: undefined]]></description>
             <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
         </item>
         <item>
@@ -21,7 +21,7 @@
             <link>https://log.sugarshin.net/2017/05/07/automation-monthly-report/</link>
             <guid>https://log.sugarshin.net/2017/05/07/automation-monthly-report/</guid>
             <pubDate>Sun, 07 May 2017 01:17:00 GMT</pubDate>
-            <description><![CDATA[月ごとに、 OSS コントリビューションや GitHub 上での活動をまとめたレポートの当ブログへの投稿を自動化しました。---なかなかブログも書けないので、これから GitHub の月報を投稿していくことにしました。]]></description>
+            <description><![CDATA[月ごとに、 OSS コントリビューションや GitHub 上での活動をまとめたレポートの当ブログへの投稿を自動化しました。***なかなかブログも書けないので、これから GitHub の月報を投稿していくことにしました。]]></description>
             <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
         </item>
         <item>
@@ -29,7 +29,7 @@
             <link>https://log.sugarshin.net/2017/04/30/monthly-report-1704/</link>
             <guid>https://log.sugarshin.net/2017/04/30/monthly-report-1704/</guid>
             <pubDate>Sat, 29 Apr 2017 15:00:00 GMT</pubDate>
-            <description><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ---Pull requestsmerged Fix files · Pull Request 3 · sugarshin/draft-js-modifiers  merged_at: 2017-04-29T06:07:53Z]]></description>
+            <description><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ***Pull requestsmerged Fix files · Pull Request 3 · sugarshin/draft-js-modifiers  merged_at: 2017-04-29T06:07:53Z]]></description>
             <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
         </item>
         <item>
@@ -37,7 +37,7 @@
             <link>https://log.sugarshin.net/2016/07/14/blog-like-software-development/</link>
             <guid>https://log.sugarshin.net/2016/07/14/blog-like-software-development/</guid>
             <pubDate>Wed, 13 Jul 2016 15:52:00 GMT</pubDate>
-            <description><![CDATA[継続的なソフトウェア開発プロセスを取り入れ、最低限の SEO は考慮しつつ無理矢理 React でブログを作ってみたという話しです。---個人ブログ開設にあたり何を使おうか迷いまして、いろいろ考えた結果結局 React と Redux で自作しました。]]></description>
+            <description><![CDATA[継続的なソフトウェア開発プロセスを取り入れ、最低限の SEO は考慮しつつ無理矢理 React でブログを作ってみたという話しです。***個人ブログ開設にあたり何を使おうか迷いまして、いろいろ考えた結果結局 React と Redux で自作しました。]]></description>
             <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
         </item>
         <item>
