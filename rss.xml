@@ -4,10 +4,18 @@
         <title>log.sugarshin.net</title>
         <link>https://log.sugarshin.net</link>
         <description>sugarshin&apos;s blog</description>
-        <lastBuildDate>Tue, 20 Jun 2017 17:21:11 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 30 Jun 2017 15:11:39 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <copyright>sugarshin | Shingo Sato All rights reserved.</copyright>
+        <item>
+            <title><![CDATA[[Monthly report] 2017-06 my activity this month on GitHub]]></title>
+            <link>https://log.sugarshin.net/2017/06/30/monthly-report-1706/</link>
+            <guid>https://log.sugarshin.net/2017/06/30/monthly-report-1706/</guid>
+            <pubDate>Fri, 30 Jun 2017 14:32:00 GMT</pubDate>
+            <description><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ***Pull requestsUpdate dependencies for linkify-plugin · Pull Request 783 · draft-js-plugins/draft-js-plugins  created_at: 2017-06-29T05:11:04Z]]></description>
+            <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
+        </item>
         <item>
             <title><![CDATA[[Monthly report] 2017-05 my activity this month on GitHub]]></title>
             <link>https://log.sugarshin.net/2017/05/31/monthly-report-1705/</link>
