@@ -4,10 +4,18 @@
         <title>log.sugarshin.net</title>
         <link>https://log.sugarshin.net</link>
         <description>sugarshin&apos;s blog</description>
-        <lastBuildDate>Thu, 31 Aug 2017 15:11:49 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 12 Sep 2017 18:25:32 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <copyright>sugarshin | Shingo Sato All rights reserved.</copyright>
+        <item>
+            <title><![CDATA[mo - CircleCI のモバイル Web クライアントを公開しました]]></title>
+            <link>https://log.sugarshin.net/2017/09/13/mo/</link>
+            <guid>https://log.sugarshin.net/2017/09/13/mo/</guid>
+            <pubDate>Tue, 12 Sep 2017 16:58:00 GMT</pubDate>
+            <description><![CDATA[モバイルデバイスの Web ブラウザ用 CircleCI クライアントを公開しました。***]]></description>
+            <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
+        </item>
         <item>
             <title><![CDATA[[Monthly report] 2017-08 my activity this month on GitHub]]></title>
             <link>https://log.sugarshin.net/2017/08/31/monthly-report-1708/</link>

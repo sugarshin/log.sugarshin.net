@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><title>mo - CircleCI のモバイル Web クライアントを公開しました | log.sugarshin.net</title><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="title" content="mo - CircleCI のモバイル Web クライアントを公開しました | log.sugarshin.net"><meta name="author" content="sugarshin | Shingo Sato"><meta name="description" content="モバイルデバイスの Web ブラウザ用 CircleCI クライアントを公開しました。***mo - CircleCI client for mobile webhttps://github.com/sugarshin/mo/Table of Contents モチベーションCi"><meta property="og:title" content="mo - CircleCI のモバイル Web クライアントを公開しました | log.sugarshin.net"><meta property="og:description" content="モバイルデバイスの Web ブラウザ用 CircleCI クライアントを公開しました。***mo - CircleCI client for mobile webhttps://github.com/sugarshin/mo/Table of Contents モチベーションCi"><meta property="og:type" content="article"><meta property="og:image" content="https://log.sugarshin.net/assets/images/2017/09/13/mo/main.png"><meta property="og:url" content="https://log.sugarshin.net/2017/09/13/mo/"><meta property="og:site_name" content="log.sugarshin.net"><link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml"><link rel="alternate" type="application/rss+xml" title="RSS 2.0 Feed" href="/rss.xml"><link rel="stylesheet" href="/assets/app-5b81482263a2749d1d5c.css"><link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="log.sugarshin.net"><link rel="manifest" href="/manifest.json"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="log.sugarshin.net"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="shortcut icon" href="/favicon.ico"><meta name="msapplication-TileColor" content="#fff"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="msapplication-config" content="/browserconfig.xml"></head><body><div style="display: none;"><h1>mo - CircleCI のモバイル Web クライアントを公開しました | log.sugarshin.net</h1><div><p><img src="/assets/images/2017/09/13/mo/main.png" alt="Main"></p>
+<p>モバイルデバイスの Web ブラウザ用 CircleCI クライアントを公開しました。</p>
+<hr>
+<p><img src="/assets/images/2017/09/13/mo/mo.gif" alt="mo.gif"></p>
+<p><a href="https://moci.now.sh/">mo - CircleCI client for mobile web</a></p>
+<p><a href="https://github.com/sugarshin/mo/">https://github.com/sugarshin/mo/</a></p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#%E3%83%A2%E3%83%81%E3%83%99%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3">モチベーション</a></li>
+<li>
+<p><a href="#%E6%A9%9F%E8%83%BD">機能</a></p>
+<ul>
+<li><a href="#list">List</a></li>
+<li><a href="#single-build">Single build</a></li>
+<li><a href="#rebuild-cancel-rebuild-without-cache">Rebuild, Cancel, Rebuild without cache</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#technology-stack">Technology stack</a></p>
+<ul>
+<li><a href="#nextjs">Next.js</a></li>
+<li><a href="#now">Now</a></li>
+</ul>
+</li>
+<li><a href="#todo">TODO</a></li>
+</ul>
+<h2 id="モチベーション">モチベーション</h2>
+<ul>
+<li>
+<p>CircleCI のオフィシャル Web クライアントがモバイルディスプレイに対応してい <del>ない</del> なかった</p>
+<ul>
+<li>（モチベーション半減したけどなんとか公開までもっていった</li>
+</ul>
+</li>
+<li>モバイル Web でもシンプルに、ビルドの確認、キャンセル、リビルドをしたい</li>
+</ul>
+<h2 id="機能">機能</h2>
+<h3 id="list">List</h3>
+<p><img src="/assets/images/2017/09/13/mo/0.png" alt="List"></p>
+<h3 id="single-build">Single build</h3>
+<p><img src="/assets/images/2017/09/13/mo/1.png" alt="Single build"></p>
+<h3 id="rebuild-cancel-rebuild-without-cache">Rebuild, Cancel, Rebuild without cache</h3>
+<p><img src="/assets/images/2017/09/13/mo/2.png" alt="Rebuild, Cancel, Rebuild without cache"></p>
+<p>Personal API Token を用意して Authorize してください。</p>
+<p><img src="/assets/images/2017/09/13/mo/auth.png" alt="Auth"></p>
+<h2 id="technology-stack">Technology stack</h2>
+<ul>
+<li>Next.js</li>
+<li>Now</li>
+</ul>
+<h3 id="nextjs">Next.js</h3>
+<p>SPA + SSR / Universal JavaScript なフレームワーク <a href="https://github.com/zeit/next.js/">Next.js</a> を利用しています。</p>
+<p>個人的には苦ではない Frontend のブートストラッピングはほぼやらなくて済むので楽です。 CSS Modules がうまく組み込めなくてあきらめました。</p>
+<p>SPA + SSR / Universal JavaScript の知見として肌感覚程度には得られました。</p>
+<h3 id="now">Now</h3>
+<p>PaaS として <a href="https://zeit.co/now">Now</a> を利用しました。デプロイが高速で Web のインターフェイスがありそこから確認できたりいろいろ便利です。</p>
+<h2 id="todo">TODO</h2>
+<ul>
+<li>リアルタイムアップデート</li>
+</ul></div></div><div id="app-root"></div><script src="/assets/app-5b81482263a2749d1d5c.js"></script></body></html>

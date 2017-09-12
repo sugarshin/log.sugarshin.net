@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://log.sugarshin.net</id>
     <title>log.sugarshin.net</title>
-    <updated>2017-08-31T15:11:49Z</updated>
+    <updated>2017-09-12T18:25:32Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>sugarshin | Shingo Sato</name>
@@ -12,6 +12,19 @@
     <link rel="alternate" href="https://log.sugarshin.net"/>
     <subtitle>sugarshin&apos;s blog</subtitle>
     <rights>sugarshin | Shingo Sato All rights reserved.</rights>
+    <entry>
+        <title type="html"><![CDATA[mo - CircleCI のモバイル Web クライアントを公開しました]]></title>
+        <id>https://log.sugarshin.net/2017/09/13/mo/</id>
+        <link href="https://log.sugarshin.net/2017/09/13/mo/">
+        </link>
+        <updated>2017-09-12T16:58:00Z</updated>
+        <summary type="html"><![CDATA[モバイルデバイスの Web ブラウザ用 CircleCI クライアントを公開しました。***]]></summary>
+        <author>
+            <name>sugarshin | Shingo Sato</name>
+            <email>shinsugar@gmail.com</email>
+            <uri>https://sugarshin.net/</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[[Monthly report] 2017-08 my activity this month on GitHub]]></title>
         <id>https://log.sugarshin.net/2017/08/31/monthly-report-1708/</id>
