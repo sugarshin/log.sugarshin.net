@@ -4,10 +4,18 @@
         <title>log.sugarshin.net</title>
         <link>https://log.sugarshin.net</link>
         <description>sugarshin&apos;s blog</description>
-        <lastBuildDate>Sun, 01 Oct 2017 07:23:53 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 31 Oct 2017 15:08:52 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <copyright>sugarshin | Shingo Sato All rights reserved.</copyright>
+        <item>
+            <title><![CDATA[[Monthly report] 2017-10 my activity this month on GitHub]]></title>
+            <link>https://log.sugarshin.net/2017/10/31/monthly-report-1710/</link>
+            <guid>https://log.sugarshin.net/2017/10/31/monthly-report-1710/</guid>
+            <pubDate>Tue, 31 Oct 2017 23:33:00 GMT</pubDate>
+            <description><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめReleasesRelease v2.0.6 · sugarshin/draft-js-checkable-list-item  description: Checkable list item for Draft.js]]></description>
+            <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
+        </item>
         <item>
             <title><![CDATA[[Monthly report] 2017-09 my activity this month on GitHub]]></title>
             <link>https://log.sugarshin.net/2017/09/30/monthly-report-1709/</link>
