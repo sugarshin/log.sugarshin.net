@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://log.sugarshin.net</id>
     <title>log.sugarshin.net</title>
-    <updated>2017-12-01T17:53:27Z</updated>
+    <updated>2017-12-01T17:59:16Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>sugarshin | Shingo Sato</name>
@@ -12,6 +12,19 @@
     <link rel="alternate" href="https://log.sugarshin.net"/>
     <subtitle>sugarshin&apos;s blog</subtitle>
     <rights>sugarshin | Shingo Sato All rights reserved.</rights>
+    <entry>
+        <title type="html"><![CDATA[[Monthly report] 2017-12 my activity this month on GitHub]]></title>
+        <id>https://log.sugarshin.net/2017/12/02/monthly-report-1712/</id>
+        <link href="https://log.sugarshin.net/2017/12/02/monthly-report-1712/">
+        </link>
+        <updated>2017-12-02T02:24:00Z</updated>
+        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ]]></summary>
+        <author>
+            <name>sugarshin | Shingo Sato</name>
+            <email>shinsugar@gmail.com</email>
+            <uri>https://sugarshin.net/</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[[Monthly report] 2017-10 my activity this month on GitHub]]></title>
         <id>https://log.sugarshin.net/2017/10/31/monthly-report-1710/</id>
