@@ -4,10 +4,18 @@
         <title>log.sugarshin.net</title>
         <link>https://log.sugarshin.net</link>
         <description>sugarshin&apos;s blog</description>
-        <lastBuildDate>Mon, 08 Jan 2018 11:14:38 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 31 Jan 2018 15:05:47 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <copyright>sugarshin | Shingo Sato All rights reserved.</copyright>
+        <item>
+            <title><![CDATA[[Monthly report] 2018-01 my activity this month on GitHub]]></title>
+            <link>https://log.sugarshin.net/2018/01/31/monthly-report-1801/</link>
+            <guid>https://log.sugarshin.net/2018/01/31/monthly-report-1801/</guid>
+            <pubDate>Wed, 31 Jan 2018 14:30:00 GMT</pubDate>
+            <description><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ]]></description>
+            <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
+        </item>
         <item>
             <title><![CDATA[[Monthly report] 2017-12 my activity this month on GitHub]]></title>
             <link>https://log.sugarshin.net/2017/12/31/monthly-report-1712/</link>
