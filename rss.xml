@@ -1,121 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-        <title>log.sugarshin.net</title>
-        <link>https://log.sugarshin.net</link>
+        <title>blog.sugarshin.net</title>
+        <link>https://blog.sugarshin.net</link>
         <description>sugarshin&apos;s blog</description>
-        <lastBuildDate>Wed, 28 Feb 2018 15:07:07 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 02 Mar 2018 23:54:42 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <copyright>sugarshin | Shingo Sato All rights reserved.</copyright>
         <item>
             <title><![CDATA[[Monthly report] 2018-02 my activity this month on GitHub]]></title>
-            <link>https://log.sugarshin.net/2018/02/28/monthly-report-1802/</link>
-            <guid>https://log.sugarshin.net/2018/02/28/monthly-report-1802/</guid>
+            <link>https://blog.sugarshin.net/2018/02/28/monthly-report-1802/</link>
+            <guid>https://blog.sugarshin.net/2018/02/28/monthly-report-1802/</guid>
             <pubDate>Wed, 28 Feb 2018 14:31:00 GMT</pubDate>
             <description><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriessugarshin/react-minimal-error-boundary  description: null]]></description>
             <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
         </item>
         <item>
             <title><![CDATA[[Monthly report] 2018-01 my activity this month on GitHub]]></title>
-            <link>https://log.sugarshin.net/2018/01/31/monthly-report-1801/</link>
-            <guid>https://log.sugarshin.net/2018/01/31/monthly-report-1801/</guid>
+            <link>https://blog.sugarshin.net/2018/01/31/monthly-report-1801/</link>
+            <guid>https://blog.sugarshin.net/2018/01/31/monthly-report-1801/</guid>
             <pubDate>Wed, 31 Jan 2018 14:30:00 GMT</pubDate>
             <description><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriesoneteam-dev/browserslist-config-oneteam  description: null]]></description>
             <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
         </item>
         <item>
             <title><![CDATA[[Monthly report] 2017-12 my activity this month on GitHub]]></title>
-            <link>https://log.sugarshin.net/2017/12/31/monthly-report-1712/</link>
-            <guid>https://log.sugarshin.net/2017/12/31/monthly-report-1712/</guid>
+            <link>https://blog.sugarshin.net/2017/12/31/monthly-report-1712/</link>
+            <guid>https://blog.sugarshin.net/2017/12/31/monthly-report-1712/</guid>
             <pubDate>Sun, 31 Dec 2017 14:51:00 GMT</pubDate>
             <description><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriesoneteam-dev/oneteam-ja-proofreader  description: null]]></description>
             <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
         </item>
         <item>
             <title><![CDATA[[Monthly report] 2017-10 my activity this month on GitHub]]></title>
-            <link>https://log.sugarshin.net/2017/10/31/monthly-report-1710/</link>
-            <guid>https://log.sugarshin.net/2017/10/31/monthly-report-1710/</guid>
+            <link>https://blog.sugarshin.net/2017/10/31/monthly-report-1710/</link>
+            <guid>https://blog.sugarshin.net/2017/10/31/monthly-report-1710/</guid>
             <pubDate>Tue, 31 Oct 2017 14:33:00 GMT</pubDate>
             <description><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめReleasesRelease v2.0.6 · sugarshin/draft-js-checkable-list-item  description: Checkable list item for Draft.js]]></description>
             <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
         </item>
         <item>
             <title><![CDATA[[Monthly report] 2017-09 my activity this month on GitHub]]></title>
-            <link>https://log.sugarshin.net/2017/09/30/monthly-report-1709/</link>
-            <guid>https://log.sugarshin.net/2017/09/30/monthly-report-1709/</guid>
+            <link>https://blog.sugarshin.net/2017/09/30/monthly-report-1709/</link>
+            <guid>https://blog.sugarshin.net/2017/09/30/monthly-report-1709/</guid>
             <pubDate>Sat, 30 Sep 2017 14:33:00 GMT</pubDate>
             <description><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめMake private repository publicsugarshin/mo  description: undefined]]></description>
             <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
         </item>
         <item>
             <title><![CDATA[mo - CircleCI のモバイル Web クライアントを公開しました]]></title>
-            <link>https://log.sugarshin.net/2017/09/13/mo/</link>
-            <guid>https://log.sugarshin.net/2017/09/13/mo/</guid>
+            <link>https://blog.sugarshin.net/2017/09/13/mo/</link>
+            <guid>https://blog.sugarshin.net/2017/09/13/mo/</guid>
             <pubDate>Tue, 12 Sep 2017 16:58:00 GMT</pubDate>
             <description><![CDATA[モバイルデバイスの Web ブラウザ用 CircleCI クライアントを公開しました。]]></description>
             <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
         </item>
         <item>
             <title><![CDATA[[Monthly report] 2017-08 my activity this month on GitHub]]></title>
-            <link>https://log.sugarshin.net/2017/08/31/monthly-report-1708/</link>
-            <guid>https://log.sugarshin.net/2017/08/31/monthly-report-1708/</guid>
+            <link>https://blog.sugarshin.net/2017/08/31/monthly-report-1708/</link>
+            <guid>https://blog.sugarshin.net/2017/08/31/monthly-report-1708/</guid>
             <pubDate>Thu, 31 Aug 2017 14:32:00 GMT</pubDate>
-            <description><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriessugarshin/qiita-sync.log.sugarshin.net  description: null]]></description>
+            <description><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriessugarshin/qiita-sync.blog.sugarshin.net  description: null]]></description>
             <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
         </item>
         <item>
             <title><![CDATA[[Monthly report] 2017-07 my activity this month on GitHub]]></title>
-            <link>https://log.sugarshin.net/2017/07/31/monthly-report-1707/</link>
-            <guid>https://log.sugarshin.net/2017/07/31/monthly-report-1707/</guid>
+            <link>https://blog.sugarshin.net/2017/07/31/monthly-report-1707/</link>
+            <guid>https://blog.sugarshin.net/2017/07/31/monthly-report-1707/</guid>
             <pubDate>Mon, 31 Jul 2017 14:32:00 GMT</pubDate>
             <description><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriessugarshin/redux-camelize  description: null]]></description>
             <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
         </item>
         <item>
             <title><![CDATA[[Monthly report] 2017-06 my activity this month on GitHub]]></title>
-            <link>https://log.sugarshin.net/2017/06/30/monthly-report-1706/</link>
-            <guid>https://log.sugarshin.net/2017/06/30/monthly-report-1706/</guid>
+            <link>https://blog.sugarshin.net/2017/06/30/monthly-report-1706/</link>
+            <guid>https://blog.sugarshin.net/2017/06/30/monthly-report-1706/</guid>
             <pubDate>Fri, 30 Jun 2017 14:32:00 GMT</pubDate>
             <description><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめPull requestsUpdate dependencies for linkify-plugin · Pull Request #783 · draft-js-plugins/draft-js-plugins  created_at: 2017-06-29T05:11:04Z]]></description>
             <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
         </item>
         <item>
             <title><![CDATA[[Monthly report] 2017-05 my activity this month on GitHub]]></title>
-            <link>https://log.sugarshin.net/2017/05/31/monthly-report-1705/</link>
-            <guid>https://log.sugarshin.net/2017/05/31/monthly-report-1705/</guid>
+            <link>https://blog.sugarshin.net/2017/05/31/monthly-report-1705/</link>
+            <guid>https://blog.sugarshin.net/2017/05/31/monthly-report-1705/</guid>
             <pubDate>Tue, 30 May 2017 15:36:00 GMT</pubDate>
             <description><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめMake private repository publicsugarshin/sugarshin-hubot  description: undefined]]></description>
             <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
         </item>
         <item>
             <title><![CDATA[OSS コントリビューションや GitHub 上のアクティビティのまとめレポート投稿を自動化する]]></title>
-            <link>https://log.sugarshin.net/2017/05/07/automation-monthly-report/</link>
-            <guid>https://log.sugarshin.net/2017/05/07/automation-monthly-report/</guid>
+            <link>https://blog.sugarshin.net/2017/05/07/automation-monthly-report/</link>
+            <guid>https://blog.sugarshin.net/2017/05/07/automation-monthly-report/</guid>
             <pubDate>Sun, 07 May 2017 01:17:00 GMT</pubDate>
             <description><![CDATA[月ごとに、 OSS コントリビューションや GitHub 上での活動をまとめたレポートの当ブログへの投稿を自動化しました。なかなかブログも書けないので、これから GitHub の月報を投稿していくことにしました。]]></description>
             <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
         </item>
         <item>
             <title><![CDATA[[Monthly report] 2017-04 my activity this month on GitHub]]></title>
-            <link>https://log.sugarshin.net/2017/04/30/monthly-report-1704/</link>
-            <guid>https://log.sugarshin.net/2017/04/30/monthly-report-1704/</guid>
+            <link>https://blog.sugarshin.net/2017/04/30/monthly-report-1704/</link>
+            <guid>https://blog.sugarshin.net/2017/04/30/monthly-report-1704/</guid>
             <pubDate>Sat, 29 Apr 2017 15:00:00 GMT</pubDate>
             <description><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめPull requestsmerged Fix files · Pull Request #3 · sugarshin/draft-js-modifiers  merged_at: 2017-04-29T06:07:53Z]]></description>
             <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
         </item>
         <item>
             <title><![CDATA[React と Redux なブログ運用をソフトウェア開発する話し]]></title>
-            <link>https://log.sugarshin.net/2016/07/14/blog-like-software-development/</link>
-            <guid>https://log.sugarshin.net/2016/07/14/blog-like-software-development/</guid>
+            <link>https://blog.sugarshin.net/2016/07/14/blog-like-software-development/</link>
+            <guid>https://blog.sugarshin.net/2016/07/14/blog-like-software-development/</guid>
             <pubDate>Wed, 13 Jul 2016 15:52:00 GMT</pubDate>
             <description><![CDATA[継続的なソフトウェア開発プロセスを取り入れ、最低限の SEO は考慮しつつ無理矢理 React でブログを作ってみたという話しです。個人ブログ開設にあたり何を使おうか迷いまして、いろいろ考えた結果結局 React と Redux で自作しました。]]></description>
             <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
         </item>
         <item>
             <title><![CDATA[リッチテキストエディタ oneteam-rte を公開しました]]></title>
-            <link>https://log.sugarshin.net/2016/06/05/published-oneteam-rte/</link>
-            <guid>https://log.sugarshin.net/2016/06/05/published-oneteam-rte/</guid>
+            <link>https://blog.sugarshin.net/2016/06/05/published-oneteam-rte/</link>
+            <guid>https://blog.sugarshin.net/2016/06/05/published-oneteam-rte/</guid>
             <pubDate>Sun, 05 Jun 2016 01:44:00 GMT</pubDate>
             <description><![CDATA[リッチテキストエディタ用の React コンポーネントを公開しました。GitHub: https://github.com/oneteam-dev/oneteam-rtenpm: https://www.npmjs.com/package/oneteam-rte]]></description>
             <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
