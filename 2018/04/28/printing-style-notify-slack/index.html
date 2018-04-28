@@ -1,0 +1,124 @@
+<!DOCTYPE html><html lang="ja"><head><meta charSet="utf-8"/><title>Web アプリケーションの印刷時スタイルを継続的にチェックして結果を Slack に通知する | blog.sugarshin.net</title><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="title" content="Web アプリケーションの印刷時スタイルを継続的にチェックして結果を Slack に通知する | blog.sugarshin.net"/><meta name="author" content="sugarshin | Shingo Sato"/><meta name="description" content="Web ページの印刷は、気をつけていないとスタイルくずれを起こしやすいかなと思います。それが、日々、機能追加や改善を行う Web アプリケーションとなるとさらにこの問題がでてきます。業務で開発している Web アプリケーションで印刷時のスタイリングをサポートするにあたり、継続的な"/><meta property="og:title" content="Web アプリケーションの印刷時スタイルを継続的にチェックして結果を Slack に通知する | blog.sugarshin.net"/><meta property="og:description" content="Web ページの印刷は、気をつけていないとスタイルくずれを起こしやすいかなと思います。それが、日々、機能追加や改善を行う Web アプリケーションとなるとさらにこの問題がでてきます。業務で開発している Web アプリケーションで印刷時のスタイリングをサポートするにあたり、継続的な"/><meta property="og:type" content="article"/><meta property="og:image" content="https://blog.sugarshin.net/assets/images/2018/04/28/printing-style-notify-slack/main.png"/><meta property="og:url" content="https://blog.sugarshin.net/2018/04/28/printing-style-notify-slack/"/><meta property="og:site_name" content="blog.sugarshin.net"/><link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0 Feed" href="/rss.xml"/><link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png"><link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/favicon.ico"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="blog.sugarshin.net"><meta name="application-name" content="blog.sugarshin.net"><meta name="mobile-web-app-capable" content="yes"><meta name="msapplication-TileColor" content="#fff"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="msapplication-config" content="/browserconfig.xml"><meta name="theme-color" content="#fff"><link href="/assets/vendor-46169fd0e1bcf5f36e74.css" rel="stylesheet"><link href="/assets/app-8c4b5e6d6ababe497f1d.css" rel="stylesheet"></head><body><div style="display:none"><h1>Web アプリケーションの印刷時スタイルを継続的にチェックして結果を Slack に通知する | blog.sugarshin.net</h1><div><p><img src="/assets/images/2018/04/28/printing-style-notify-slack/main.png" alt="Main"></p>
+<p>Web ページの印刷は、気をつけていないとスタイルくずれを起こしやすいかなと思います。それが、日々、機能追加や改善を行う Web アプリケーションとなるとさらにこの問題がでてきます。</p>
+<p>業務で開発している Web アプリケーションで印刷時のスタイリングをサポートするにあたり、継続的な見た目のチェックを自動化し、結果を Slack に通知するようにしました。</p>
+<hr>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li>
+<p><a href="#circleci">CircleCI</a></p>
+<ul>
+<li><a href="#circleciconfigyml">.circleci/config.yml</a></li>
+</ul>
+</li>
+<li><a href="#puppeteer">Puppeteer</a></li>
+<li><a href="#slack-%E3%81%AB%E9%80%9A%E7%9F%A5">Slack に通知</a></li>
+<li><a href="#diff">Diff</a></li>
+</ul>
+<h2 id="circleci">CircleCI</h2>
+<p>Web アプリケーションのデプロイをトリガーに、 CircleCI 上で実行します。</p>
+<ol>
+<li>ヘッドレスブラウザで印刷をエミュレートし、 PDF やスクリーンショットをとる</li>
+<li>結果を Slack に通知する</li>
+<li>上記を CircleCI で実行</li>
+</ol>
+<h3 id="circleciconfigyml">.circleci/config.yml</h3>
+<pre><code class="language-yaml">version: 2
+jobs:
+  build:
+    branches:
+      only:
+        - master
+    working_directory: ~/printing-style-notify
+    docker:
+      - image: circleci/node:8.11.1
+    steps:
+      - checkout
+      - restore_cache:
+          name: Restoring Yarn Cache
+          keys:
+            - v1-dependencies-{{ arch }}-{{ .Branch }}-{{ checksum "yarn.lock" }}
+            - v1-dependencies-
+      - run: yarn
+      - save_cache:
+          paths:
+            - ~/printing-style-notify/node_modules
+            - ~/.cache/yarn/
+          key: v1-dependencies-{{ arch }}-{{ .Branch }}-{{ checksum "yarn.lock" }}
+      - run:
+          name: Setup libxcb
+          command: bash .circleci/setup-libxcb.sh
+      - run: node pdf-make.js
+      - store_artifacts:
+          path: print.pdf
+      - store_artifacts:
+          path: print.png
+      - run: node slack-notify.js
+</code></pre>
+<p>CircleCI 公式 Node.js の Docker image で、後述する Puppeteer をさくっと動作させるために libxcb 関連のパッケージもインストールしています。</p>
+<p>ref: <a href="https://github.com/Googlechrome/puppeteer/issues/290#issuecomment-324838511">https://github.com/Googlechrome/puppeteer/issues/290#issuecomment-324838511</a></p>
+<pre><code class="language-bash">#!/bin/bash
+
+sudo apt-get update
+sudo apt-get install -yq gconf-service libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 \
+  libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 \
+  libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 \
+  libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 \
+  ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget
+</code></pre>
+<p>CircleCI の REST API で実行します。</p>
+<pre><code class="language-bash">curl -XPOST "https://circleci.com/api/v1.1/project/github/$username/printing-style-notify?circle-token=$CIRCLE_TOKEN"
+</code></pre>
+<p>現状、 CircleCI 2.0 の Workflows は REST API から実行できないようなので、とりあえず 1 つの Job にまとめて記述してあります。</p>
+<p>ref: <a href="https://discuss.circleci.com/t/trigger-workflow-through-rest-api/13931/47">https://discuss.circleci.com/t/trigger-workflow-through-rest-api/13931/47</a></p>
+<h2 id="puppeteer">Puppeteer</h2>
+<p><a href="https://github.com/GoogleChrome/puppeteer">Puppeteer</a> を使ってみました。印刷時の PDF と、後述する Slack の通知でサムネイルを表示するためにスクリーンショットも生成します。</p>
+<p>e.g.</p>
+<pre><code class="language-js">const puppeteer = require('puppeteer')
+
+const main = async () => {
+  const browser = await puppeteer.launch()
+  const page = await browser.newPage()
+  await page.goto(process.env.TARGET_URL, { waitUntil: 'networkidle0' })
+  await page.waitForSelector(process.env.TARGET_SELECTOR)
+  await page.pdf({
+    path: 'print.pdf',
+    displayHeaderFooter: true,
+    printBackground: true,
+  })
+  await page.emulateMedia('print')
+  await page.screenshot({ path: 'print.png', fullPage: true })
+  await browser.close()
+}
+main()
+</code></pre>
+<h2 id="slack-に通知">Slack に通知</h2>
+<p>あとは先程 Artifacts としてストアされた PDF とスクリーンショットを Slack に Webhook 経由で通知するだけです。 <a href="https://api.slack.com/docs/message-attachments">Attachments</a> で装飾してあげます。</p>
+<p>通知先の Slack で PDF やスクリーンショットを参照できなきゃいけないので、これも CircleCI の API でとるようにしています。</p>
+<p>e.g.</p>
+<pre><code class="language-js">const { IncomingWebhook } = require('@slack/client')
+const getArtifacts = require('./getArtifacts')
+
+const webhook = new IncomingWebhook(process.env.SLACK_WEBHOOK_URL)
+
+const main = async () => {
+  const artifacts = await getArtifacts()
+  const pdf = artifacts.find(a => /print\.pdf$/.test(a.path))
+  const png = artifacts.find(a => /print\.png$/.test(a.path))
+  const attachments = [{
+    color: '#2eb886',
+    pretext: `Screenshot for print style on \`${process.env.RELEASE_STAGE}\``,
+    text: `&#x3C;${process.env.TARGET_URL}|URL>`,
+    author_name: 'Puppeteer',
+    title: 'Build by CircleCI',
+    title_link: process.env.CIRCLE_BUILD_URL,
+    image_url: `${png.url}?circle-token=${process.env.CIRCLE_TOKEN}`,
+    fields: [
+      { value: `&#x3C;${pdf.url}?circle-token=${process.env.CIRCLE_TOKEN}|Download PDF>` },
+    ],
+  }]
+  await webhook.send({ attachments })
+}
+main()
+</code></pre>
+<h2 id="diff">Diff</h2>
+<p>スタイルくずれを把握しやすいように、 PDF とかスクリーンショットの Diff をとって通知内容に含められればもっといいですね。</p></div></div><div id="app-root"></div><script type="text/javascript" src="/assets/vendor-b2dd71eb3417f8112658.js"></script><script type="text/javascript" src="/assets/app-f8cbaf0b3efa1a018b52.js"></script></body></html>

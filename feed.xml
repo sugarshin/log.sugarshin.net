@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.sugarshin.net</id>
     <title>blog.sugarshin.net</title>
-    <updated>2018-03-31T15:07:31Z</updated>
+    <updated>2018-04-28T08:04:34Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>sugarshin | Shingo Sato</name>
@@ -12,6 +12,19 @@
     <link rel="alternate" href="https://blog.sugarshin.net"/>
     <subtitle>sugarshin&apos;s blog</subtitle>
     <rights>sugarshin | Shingo Sato All rights reserved.</rights>
+    <entry>
+        <title type="html"><![CDATA[Web アプリケーションの印刷時スタイルを継続的にチェックして結果を Slack に通知する]]></title>
+        <id>https://blog.sugarshin.net/2018/04/28/printing-style-notify-slack/</id>
+        <link href="https://blog.sugarshin.net/2018/04/28/printing-style-notify-slack/">
+        </link>
+        <updated>2018-04-28T07:00:00Z</updated>
+        <summary type="html"><![CDATA[Web ページの印刷は、気をつけていないとスタイルくずれを起こしやすいかなと思います。それが、日々、機能追加や改善を行う Web アプリケーションとなるとさらにこの問題がでてきます。業務で開発している Web アプリケーションで印刷時のスタイリングをサポートするにあたり、継続的な見た目のチェックを自動化し、結果を Slack に通知するようにしました。]]></summary>
+        <author>
+            <name>sugarshin | Shingo Sato</name>
+            <email>shinsugar@gmail.com</email>
+            <uri>https://sugarshin.net/</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[[Monthly report] 2018-03 my activity this month on GitHub]]></title>
         <id>https://blog.sugarshin.net/2018/03/31/monthly-report-1803/</id>
