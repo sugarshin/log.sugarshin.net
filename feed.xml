@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.sugarshin.net</id>
     <title>blog.sugarshin.net</title>
-    <updated>2018-04-28T08:04:34Z</updated>
+    <updated>2018-04-30T15:08:07Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>sugarshin | Shingo Sato</name>
@@ -12,6 +12,19 @@
     <link rel="alternate" href="https://blog.sugarshin.net"/>
     <subtitle>sugarshin&apos;s blog</subtitle>
     <rights>sugarshin | Shingo Sato All rights reserved.</rights>
+    <entry>
+        <title type="html"><![CDATA[[Monthly report] 2018-04 my activity this month on GitHub]]></title>
+        <id>https://blog.sugarshin.net/2018/04/30/monthly-report-1804/</id>
+        <link href="https://blog.sugarshin.net/2018/04/30/monthly-report-1804/">
+        </link>
+        <updated>2018-04-30T14:31:00Z</updated>
+        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriessugarshin/docker-nodejs-puppeteer  description: null]]></summary>
+        <author>
+            <name>sugarshin | Shingo Sato</name>
+            <email>shinsugar@gmail.com</email>
+            <uri>https://sugarshin.net/</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Web アプリケーションの印刷時スタイルを継続的にチェックして結果を Slack に通知する]]></title>
         <id>https://blog.sugarshin.net/2018/04/28/printing-style-notify-slack/</id>
