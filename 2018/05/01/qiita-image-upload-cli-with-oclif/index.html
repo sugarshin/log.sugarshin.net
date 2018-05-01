@@ -1,0 +1,85 @@
+<!DOCTYPE html><html lang="ja"><head><meta charSet="utf-8"/><title>Qiita に画像をアップロードする CLI ツールを oclif でつくる | blog.sugarshin.net</title><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="title" content="Qiita に画像をアップロードする CLI ツールを oclif でつくる | blog.sugarshin.net"/><meta name="author" content="sugarshin | Shingo Sato"/><meta name="description" content="Qiita に画像をアップロードする CLI ツールを、 Heroku 製の CLI フレームワーク oclif を使ってつくってみました。yarn global add qiiuornpm install -g qiiu$ qiiu --username=$QIITA_USER"/><meta property="og:title" content="Qiita に画像をアップロードする CLI ツールを oclif でつくる | blog.sugarshin.net"/><meta property="og:description" content="Qiita に画像をアップロードする CLI ツールを、 Heroku 製の CLI フレームワーク oclif を使ってつくってみました。yarn global add qiiuornpm install -g qiiu$ qiiu --username=$QIITA_USER"/><meta property="og:type" content="article"/><meta property="og:image" content="https://blog.sugarshin.net/assets/images/2018/05/01/qiita-image-upload-cli-with-oclif/main.png"/><meta property="og:url" content="https://blog.sugarshin.net/2018/05/01/qiita-image-upload-cli-with-oclif/"/><meta property="og:site_name" content="blog.sugarshin.net"/><link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0 Feed" href="/rss.xml"/><link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png"><link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/favicon.ico"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="blog.sugarshin.net"><meta name="application-name" content="blog.sugarshin.net"><meta name="mobile-web-app-capable" content="yes"><meta name="msapplication-TileColor" content="#fff"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="msapplication-config" content="/browserconfig.xml"><meta name="theme-color" content="#fff"><link href="/assets/vendor-149ec8efbcb482ac2a72.css" rel="stylesheet"><link href="/assets/app-c2997bfcc30cbf3d016d.css" rel="stylesheet"></head><body><div style="display:none"><h1>Qiita に画像をアップロードする CLI ツールを oclif でつくる | blog.sugarshin.net</h1><div><p><img src="/assets/images/2018/05/01/qiita-image-upload-cli-with-oclif/main.png" alt="Main"></p>
+<p><a href="https://qiita.com/">Qiita</a> に画像をアップロードする CLI ツールを、 <a href="https://www.heroku.com/">Heroku</a> 製の CLI フレームワーク <a href="https://oclif.io/">oclif</a> を使ってつくってみました。</p>
+<pre><code class="language-bash">yarn global add qiiu
+
+# or
+
+npm install -g qiiu
+
+$ qiiu --username=$QIITA_USERNAME --password=$PASSWORD ./path/to/example.png
+
+https://qiita-image-store.s3.amazonaws.com/0/2432/df89ffdd-f8f8-fd0s-4124-sdddfd9d6f5f.png
+</code></pre>
+<p><a href="https://www.npmjs.com/package/qiiu">qiiu  -  npm</a></p>
+<p><a href="https://github.com/sugarshin/qiiu">https://github.com/sugarshin/qiiu</a></p>
+<hr>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#%E3%83%A2%E3%83%81%E3%83%99%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3">モチベーション</a></li>
+<li><a href="#oclif">oclif</a></li>
+<li><a href="#puppeteer">Puppeteer</a></li>
+</ul>
+<h2 id="モチベーション">モチベーション</h2>
+<p>Qiita への記事投稿を CLI で完結させたいなぁと思っていて、 <a href="https://qiita.com/api/v2/docs">REST API</a> は提供されているものの当然画像をアップロードするインターフェイスはなく、別でホスティングするか迷っていましたが結局それ用のツールをつくることにしました。</p>
+<h2 id="oclif">oclif</h2>
+<p>oclif は、 Heroku や <a href="https://developer.salesforce.com/ja/tools/sfdxcli">Salesforce CLI</a> でも利用されているらしく、 Scaffolding やテストヘルパー、リリースまで面倒みてくれるフレームワークでいろいろ楽でした。 Plugin 機構もあって拡張性も高いみたいです。</p>
+<pre><code>$ npx oclif single qiiu
+npx: installed 423 in 17.533s
+
+     _-----_     ╭──────────────────────────╮
+    |       |    │      Time to build a     │
+    |--(o)--|    │  single-command CLI with │
+   `---------´   │  oclif! Version: 1.7.35  │
+    ( _´U`_ )    ╰──────────────────────────╯
+    /___A___\   /
+     |  ~  |     
+   __'.___.'__   
+ ´   `  |° ´ Y `
+
+? npm package name qiiu
+? command bin name the CLI will export qiiu
+? description Upload image to Qiita
+? author sugarshin @sugarshin
+? version 0.0.0
+? license MIT
+? node version supported >=8.0.0
+? github owner of repository (https://github.com/OWNER/repo) sugarshin
+? github name of repository (https://github.com/owner/REPO) qiiu
+? optional components to include yarn (npm alternative), mocha (testing framework), typescript (static typing for javascript), tslint (static analysis tool for typescript)
+   create package.json
+   create .circleci/config.yml
+   create tslint.json
+   create tsconfig.json
+   create test/tsconfig.json
+   create .nycrc
+   create test/helpers/init.js
+   create test/mocha.opts
+   create .editorconfig
+   create .circleci/greenkeeper
+   create README.md
+   create appveyor.yml
+   create .gitattributes
+   create .gitignore
+   create bin/run
+   create bin/run.cmd
+   create src/index.ts
+   create test/index.test.ts
+yarn add v1.3.2
+
+# ...
+
+Created qiiu in /Users/shingosato/npm/qiiu
+</code></pre>
+<h2 id="puppeteer">Puppeteer</h2>
+<p>内部的には <a href="https://github.com/GoogleChrome/puppeteer">Puppeteer</a> を利用してアップロードしています。</p>
+<pre><code class="language-typescript">const inputFile: ElementHandle = await page.$(selectors.fileUploadButton)
+if (inputFile) {
+  await inputFile.uploadFile(imagePath)
+} else {
+  throw new Error(`Can't find \`${selectors.fileUploadButton}\``)
+}
+</code></pre>
+<p>ref: <a href="https://github.com/sugarshin/qiiu/blob/master/src/upload.ts">https://github.com/sugarshin/qiiu/blob/master/src/upload.ts</a></p>
+<p>2 段階認証を有効にしている場合の対応や、記事の下書きの上限数を考慮する対応などもしてあります。</p>
+<hr>
+<p>これでいろいろ自動化できそう。</p></div></div><div id="app-root"></div><script type="text/javascript" src="/assets/vendor-09da829330509f454afd.js"></script><script type="text/javascript" src="/assets/app-35bdfc29139ec2dc1213.js"></script></body></html>
