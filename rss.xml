@@ -4,7 +4,7 @@
         <title>blog.sugarshin.net</title>
         <link>https://blog.sugarshin.net</link>
         <description>sugarshin&apos;s blog</description>
-        <lastBuildDate>Tue, 01 May 2018 15:53:01 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 01 May 2018 15:58:43 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <copyright>sugarshin | Shingo Sato All rights reserved.</copyright>
@@ -13,7 +13,7 @@
             <link>https://blog.sugarshin.net/2018/05/01/qiita-image-upload-cli-with-oclif/</link>
             <guid>https://blog.sugarshin.net/2018/05/01/qiita-image-upload-cli-with-oclif/</guid>
             <pubDate>Tue, 01 May 2018 14:35:00 GMT</pubDate>
-            <description><![CDATA[Qiita に画像をアップロードする CLI ツールを、 Heroku 製の CLI フレームワーク oclif を使ってつくってみました。yarn global add qiiuor]]></description>
+            <description><![CDATA[Qiita に画像をアップロードする CLI ツールを、 Heroku 製の CLI フレームワーク oclif を使ってつくってみました。$ yarn global add qiiuor]]></description>
             <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
         </item>
         <item>
