@@ -4,10 +4,18 @@
         <title>blog.sugarshin.net</title>
         <link>https://blog.sugarshin.net</link>
         <description>sugarshin&apos;s blog</description>
-        <lastBuildDate>Sat, 26 May 2018 21:58:42 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 31 May 2018 15:10:27 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <copyright>sugarshin | Shingo Sato All rights reserved.</copyright>
+        <item>
+            <title><![CDATA[[Monthly report] 2018-05 my activity this month on GitHub]]></title>
+            <link>https://blog.sugarshin.net/2018/05/31/monthly-report-1805/</link>
+            <guid>https://blog.sugarshin.net/2018/05/31/monthly-report-1805/</guid>
+            <pubDate>Thu, 31 May 2018 14:31:00 GMT</pubDate>
+            <description><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriessugarshin/qiiu  description: null]]></description>
+            <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
+        </item>
         <item>
             <title><![CDATA[Qiita に画像をアップロードする CLI ツールを oclif でつくる]]></title>
             <link>https://blog.sugarshin.net/2018/05/01/qiita-image-upload-cli-with-oclif/</link>
