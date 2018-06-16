@@ -4,10 +4,18 @@
         <title>blog.sugarshin.net</title>
         <link>https://blog.sugarshin.net</link>
         <description>sugarshin&apos;s blog</description>
-        <lastBuildDate>Thu, 31 May 2018 15:10:27 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 16 Jun 2018 17:29:50 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <copyright>sugarshin | Shingo Sato All rights reserved.</copyright>
+        <item>
+            <title><![CDATA[FaSS の予約状況を確認する Hubot スクリプトをつくりました]]></title>
+            <link>https://blog.sugarshin.net/2018/06/17/hubot-fass-reservation/</link>
+            <guid>https://blog.sugarshin.net/2018/06/17/hubot-fass-reservation/</guid>
+            <pubDate>Sat, 16 Jun 2018 16:30:00 GMT</pubDate>
+            <description><![CDATA[FaSS の予約の順番待ちを確認したり、順番が近づくと通知してくれる Hubot スクリプトをつくりました。https://github.com/sugarshin/hubot-fass-reservationhubot-fass-reservation  -  npm]]></description>
+            <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
+        </item>
         <item>
             <title><![CDATA[[Monthly report] 2018-05 my activity this month on GitHub]]></title>
             <link>https://blog.sugarshin.net/2018/05/31/monthly-report-1805/</link>

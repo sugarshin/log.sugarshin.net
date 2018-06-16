@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="ja"><head><meta charSet="utf-8"/><title>FaSS の予約状況を確認する Hubot スクリプトをつくりました | blog.sugarshin.net</title><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="title" content="FaSS の予約状況を確認する Hubot スクリプトをつくりました | blog.sugarshin.net"/><meta name="author" content="sugarshin | Shingo Sato"/><meta name="description" content="FaSS の予約の順番待ちを確認したり、順番が近づくと通知してくれる Hubot スクリプトをつくりました。https://github.com/sugarshin/hubot-fass-reservationhubot-fass-reservation  -  npmyarn "/><meta property="og:title" content="FaSS の予約状況を確認する Hubot スクリプトをつくりました | blog.sugarshin.net"/><meta property="og:description" content="FaSS の予約の順番待ちを確認したり、順番が近づくと通知してくれる Hubot スクリプトをつくりました。https://github.com/sugarshin/hubot-fass-reservationhubot-fass-reservation  -  npmyarn "/><meta property="og:type" content="article"/><meta property="og:image" content="https://blog.sugarshin.net/assets/images/2018/06/17/hubot-fass-reservation/main.png"/><meta property="og:url" content="https://blog.sugarshin.net/2018/06/17/hubot-fass-reservation/"/><meta property="og:site_name" content="blog.sugarshin.net"/><link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0 Feed" href="/rss.xml"/><link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png"><link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/favicon.ico"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="blog.sugarshin.net"><meta name="application-name" content="blog.sugarshin.net"><meta name="mobile-web-app-capable" content="yes"><meta name="msapplication-TileColor" content="#fff"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="msapplication-config" content="/browserconfig.xml"><meta name="theme-color" content="#fff"><link href="/assets/vendor-c5f595fabf23cb0d3879.css" rel="stylesheet"><link href="/assets/app-3944bd84440415a60a82.css" rel="stylesheet"></head><body><div style="display:none"><h1>FaSS の予約状況を確認する Hubot スクリプトをつくりました | blog.sugarshin.net</h1><div><p><img src="/assets/images/2018/06/17/hubot-fass-reservation/main.png" alt="Main"></p>
+<p><a href="http://www.fasssalon.com/">FaSS</a> の予約の順番待ちを確認したり、順番が近づくと通知してくれる Hubot スクリプトをつくりました。</p>
+<p><a href="https://github.com/sugarshin/hubot-fass-reservation">https://github.com/sugarshin/hubot-fass-reservation</a></p>
+<p><a href="https://www.npmjs.com/package/hubot-fass-reservation">hubot-fass-reservation  -  npm</a></p>
+<pre><code class="language-bash">yarn add hubot-fass-reservation
+
+# or
+
+npm install hubot-fass-reservation
+</code></pre>
+<pre><code class="language-json">// external-scripts.json
+
+[
+  "hubot-fass-reservation"
+]
+</code></pre>
+<hr>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#%E3%83%A2%E3%83%81%E3%83%99%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3">モチベーション</a></li>
+<li><a href="#%E3%83%AA%E3%82%B9%E3%83%88">リスト</a></li>
+<li><a href="#%E9%A0%86%E7%95%AA%E5%BE%85%E3%81%A1%E7%A2%BA%E8%AA%8D">順番待ち確認</a></li>
+<li><a href="#todo">TODO</a></li>
+</ul>
+<h2 id="モチベーション">モチベーション</h2>
+<p>子供や自分の髪を切るのに FaSS というお店を利用しています。カットと仕上げのみで 2,000 円ほどと、安くて早いのでよく普段から利用しています。</p>
+<p><a href="http://www.fasssalon.com/sys/#flow">受付システム</a>があり、来店して受付機から発券するか、 <a href="http://www.fasssalon.com/sys/#accept">Web</a> でも発券できます。</p>
+<p>順番が近づくとメールが届いたり、専用の Web ページから順番を確認できたりするのですが、もっと手軽に Slack でそれを行いたいので Hubot スクリプトをつくりました。</p>
+<h2 id="リスト">リスト</h2>
+<p>店舗と識別子一覧を表示します。 <a href="http://www.fasssalon.com/salonlist/">http://www.fasssalon.com/salonlist/</a></p>
+<pre><code class="language-bash">> hubot fass list
+
+FaSS有楽町マルイ店 - yurakuchomarui
+  e.g., `hubot fass yurakuchomarui w`
+
+FaSS八重洲地下街店 - yaesuchikagai
+  e.g., `hubot fass yaesuchikagai w`
+
+FaSS中目黒店 - nakameguro
+  e.g., `hubot fass nakameguro w`
+
+FaSS二子玉川ライズS.C.店 - futakotamagawarisesc
+  e.g., `hubot fass futakotamagawarisesc w`
+
+FaSS新宿マルイ本館店 - shinjukumaruihonkan
+  e.g., `hubot fass shinjukumaruihonkan w`
+
+FaSSアトレヴィ大塚店 - atrevieotsuka
+  e.g., `hubot fass atrevieotsuka w`
+
+FaSS三軒茶屋店 - sangenjaya
+  e.g., `hubot fass sangenjaya w`
+
+FaSS下北沢店 - shimokitazawa
+  e.g., `hubot fass shimokitazawa w`
+
+FaSS代官山アドレス・ディセ店 - daikanyama17
+  e.g., `hubot fass daikanyama17 w`
+
+FaSS横浜ビブレ店 - yokohamavivre
+  e.g., `hubot fass yokohamavivre w`
+
+FaSSアトレ川崎店 - atrekawasaki
+  e.g., `hubot fass atrekawasaki w`
+</code></pre>
+<h2 id="順番待ち確認">順番待ち確認</h2>
+<pre><code class="language-bash">> hubot fass futakotamagawarisesc w
+
+ＦａＳＳニ子玉川ライズＳ．Ｃ．店
+ ・待ち人数：6人
+ ・待ち時間の目安：40 ～ 50分
+ 　01) 207
+ 　02) 208
+ 　03) 209
+ 　04) 210
+ 　05) 212
+ 　06) 213
+</code></pre>
+<p>予約番号を入れると順番が近づくとステップで通知してくれます。</p>
+<pre><code class="language-bash">> hubot fass futakotamagawarisesc w 39
+
+> ｀39｀ 番の監視を開始します
+
+> @sugarshin あと 5 人で順番がきます
+
+> @sugarshin あと 3 人で順番がきます
+
+> @sugarshin 順番がきました
+</code></pre>
+<h2 id="todo">TODO</h2>
+<p>受付できるようにもする予定です。まだ実装していません。</p>
+<pre><code class="language-bash">> hubot fass futakotamagawarisesc rsv
+
+> 予約しました、番号は `43` です
+</code></pre></div></div><div id="app-root"></div><script>!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var o=document.getElementsByTagName("script")[0];o.parentNode.insertBefore(n,o);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+analytics.load("K0C4nouS0njLcqt5oX0qFLOhdbq3zFwH");
+
+}}();</script><script type="text/javascript" src="/assets/vendor-9bbcc31344cbd28fa6ec.js"></script><script type="text/javascript" src="/assets/app-34282261ce805f528ba5.js"></script></body></html>
