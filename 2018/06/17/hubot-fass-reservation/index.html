@@ -25,10 +25,10 @@ npm install hubot-fass-reservation
 <h2 id="モチベーション">モチベーション</h2>
 <p>子供や自分の髪を切るのに FaSS というお店を利用しています。カットと仕上げのみで 2,000 円ほどと、安くて早いのでよく普段から利用しています。</p>
 <p><a href="http://www.fasssalon.com/sys/#flow">受付システム</a>があり、来店して受付機から発券するか、 <a href="http://www.fasssalon.com/sys/#accept">Web</a> でも発券できます。</p>
-<p>順番が近づくとメールが届いたり、専用の Web ページから順番を確認できたりするのですが、もっと手軽に Slack でそれを行いたいので Hubot スクリプトをつくりました。</p>
+<p>事前に登録しておけば、順番が近づくとメールが届いたり、専用の Web ページから順番を確認できたりするのですが、もっと手軽に Slack でそれを行いたかったので Hubot スクリプトとしてつくってみました。</p>
 <h2 id="リスト">リスト</h2>
 <p>店舗と識別子一覧を表示します。 <a href="http://www.fasssalon.com/salonlist/">http://www.fasssalon.com/salonlist/</a></p>
-<pre><code class="language-bash">> hubot fass list
+<pre><code class="language-bash">> hubot fass ls
 
 FaSS有楽町マルイ店 - yurakuchomarui
   e.g., `hubot fass yurakuchomarui w`
@@ -66,17 +66,17 @@ FaSSアトレ川崎店 - atrekawasaki
 <h2 id="順番待ち確認">順番待ち確認</h2>
 <pre><code class="language-bash">> hubot fass futakotamagawarisesc w
 
-ＦａＳＳニ子玉川ライズＳ．Ｃ．店
- ・待ち人数：6人
- ・待ち時間の目安：40 ～ 50分
- 　01) 207
- 　02) 208
- 　03) 209
- 　04) 210
- 　05) 212
- 　06) 213
+> ＦａＳＳニ子玉川ライズＳ．Ｃ．店
+>  ・待ち人数：6人
+>  ・待ち時間の目安：40 ～ 50分
+>  　01) 207
+>  　02) 208
+>  　03) 209
+>  　04) 210
+>  　05) 212
+>  　06) 213
 </code></pre>
-<p>予約番号を入れると順番が近づくとステップで通知してくれます。</p>
+<p>予約番号を入れると、順番が近づくとステップで通知してくれます。</p>
 <pre><code class="language-bash">> hubot fass futakotamagawarisesc w 39
 
 > ｀39｀ 番の監視を開始します
@@ -88,11 +88,11 @@ FaSSアトレ川崎店 - atrekawasaki
 > @sugarshin 順番がきました
 </code></pre>
 <h2 id="todo">TODO</h2>
-<p>受付できるようにもする予定です。まだ実装していません。</p>
+<p>受付できるようにもする予定です。まだ実装はしていません。</p>
 <pre><code class="language-bash">> hubot fass futakotamagawarisesc rsv
 
 > 予約しました、番号は `43` です
 </code></pre></div></div><div id="app-root"></div><script>!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var o=document.getElementsByTagName("script")[0];o.parentNode.insertBefore(n,o);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
 analytics.load("K0C4nouS0njLcqt5oX0qFLOhdbq3zFwH");
 
-}}();</script><script type="text/javascript" src="/assets/vendor-9bbcc31344cbd28fa6ec.js"></script><script type="text/javascript" src="/assets/app-34282261ce805f528ba5.js"></script></body></html>
+}}();</script><script type="text/javascript" src="/assets/vendor-9bbcc31344cbd28fa6ec.js"></script><script type="text/javascript" src="/assets/app-31183efa8c3d5f0025bf.js"></script></body></html>
