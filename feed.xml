@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.sugarshin.net</id>
     <title>blog.sugarshin.net</title>
-    <updated>2018-06-17T00:08:11Z</updated>
+    <updated>2018-06-30T15:10:26Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>sugarshin | Shingo Sato</name>
@@ -12,6 +12,19 @@
     <link rel="alternate" href="https://blog.sugarshin.net"/>
     <subtitle>sugarshin&apos;s blog</subtitle>
     <rights>sugarshin | Shingo Sato All rights reserved.</rights>
+    <entry>
+        <title type="html"><![CDATA[[Monthly report] 2018-06 my activity this month on GitHub]]></title>
+        <id>https://blog.sugarshin.net/2018/06/30/monthly-report-1806/</id>
+        <link href="https://blog.sugarshin.net/2018/06/30/monthly-report-1806/">
+        </link>
+        <updated>2018-06-30T14:31:00Z</updated>
+        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriessugarshin/hubot-fass-reservation  description: null]]></summary>
+        <author>
+            <name>sugarshin | Shingo Sato</name>
+            <email>shinsugar@gmail.com</email>
+            <uri>https://sugarshin.net/</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[FaSS の予約状況を確認する Hubot スクリプトをつくりました]]></title>
         <id>https://blog.sugarshin.net/2018/06/17/hubot-fass-reservation/</id>
