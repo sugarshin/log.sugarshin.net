@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.sugarshin.net</id>
     <title>blog.sugarshin.net</title>
-    <updated>2018-12-10T13:49:43Z</updated>
+    <updated>2018-12-16T00:00:38Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>sugarshin | Shingo Sato</name>
@@ -83,7 +83,7 @@
         <link href="https://blog.sugarshin.net/2018/06/17/hubot-fass-reservation/">
         </link>
         <updated>2018-06-16T16:30:00Z</updated>
-        <summary type="html"><![CDATA[FaSS の予約の順番待ちを確認したり、順番が近づくと通知してくれる Hubot スクリプトをつくりました。https://github.com/sugarshin/hubot-fass-reservationhubot-fass-reservation  -  npm]]></summary>
+        <summary type="html"><![CDATA[MainFaSS の予約の順番待ちを確認したり、順番が近づくと通知してくれる Hubot スクリプトをつくりました。https://github.com/sugarshin/hubot-fass-reservationhubot-fass-reservation  -  npm]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -109,7 +109,7 @@
         <link href="https://blog.sugarshin.net/2018/05/01/qiita-image-upload-cli-with-oclif/">
         </link>
         <updated>2018-05-01T14:35:00Z</updated>
-        <summary type="html"><![CDATA[Qiita に画像をアップロードする CLI ツールを、 Heroku 製の CLI フレームワーク oclif を使ってつくってみました。$ yarn global add qiiuor]]></summary>
+        <summary type="html"><![CDATA[MainQiita に画像をアップロードする CLI ツールを、 Heroku 製の CLI フレームワーク oclif を使ってつくってみました。$ yarn global add qiiuor]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -135,7 +135,7 @@
         <link href="https://blog.sugarshin.net/2018/04/28/printing-style-notify-slack/">
         </link>
         <updated>2018-04-28T07:00:00Z</updated>
-        <summary type="html"><![CDATA[Web ページの印刷は、気をつけていないとスタイルくずれを起こしやすいかなと思います。それが、日々、機能追加や改善を行う Web アプリケーションとなるとさらにこの問題がでてきます。業務で開発している Web アプリケーションで印刷時のスタイリングをサポートするにあたり、継続的な見た目のチェックを自動化し、結果を Slack に通知するようにしました。]]></summary>
+        <summary type="html"><![CDATA[MainWeb ページの印刷は、気をつけていないとスタイルくずれを起こしやすいかなと思います。それが、日々、機能追加や改善を行う Web アプリケーションとなるとさらにこの問題がでてきます。業務で開発している Web アプリケーションで印刷時のスタイリングをサポートするにあたり、継続的な見た目のチェックを自動化し、結果を Slack に通知するようにしました。]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -226,7 +226,7 @@
         <link href="https://blog.sugarshin.net/2017/09/13/mo/">
         </link>
         <updated>2017-09-12T16:58:00Z</updated>
-        <summary type="html"><![CDATA[モバイルデバイスの Web ブラウザ用 CircleCI クライアントを公開しました。]]></summary>
+        <summary type="html"><![CDATA[Mainモバイルデバイスの Web ブラウザ用 CircleCI クライアントを公開しました。mo.gif]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -291,7 +291,7 @@
         <link href="https://blog.sugarshin.net/2017/05/07/automation-monthly-report/">
         </link>
         <updated>2017-05-07T01:17:00Z</updated>
-        <summary type="html"><![CDATA[月ごとに、 OSS コントリビューションや GitHub 上での活動をまとめたレポートの当ブログへの投稿を自動化しました。なかなかブログも書けないので、これから GitHub の月報を投稿していくことにしました。]]></summary>
+        <summary type="html"><![CDATA[Main月ごとに、 OSS コントリビューションや GitHub 上での活動をまとめたレポートの当ブログへの投稿を自動化しました。なかなかブログも書けないので、これから GitHub の月報を投稿していくことにしました。]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -317,7 +317,7 @@
         <link href="https://blog.sugarshin.net/2016/07/14/blog-like-software-development/">
         </link>
         <updated>2016-07-13T15:52:00Z</updated>
-        <summary type="html"><![CDATA[継続的なソフトウェア開発プロセスを取り入れ、最低限の SEO は考慮しつつ無理矢理 React でブログを作ってみたという話しです。個人ブログ開設にあたり何を使おうか迷いまして、いろいろ考えた結果結局 React と Redux で自作しました。]]></summary>
+        <summary type="html"><![CDATA[Main継続的なソフトウェア開発プロセスを取り入れ、最低限の SEO は考慮しつつ無理矢理 React でブログを作ってみたという話しです。個人ブログ開設にあたり何を使おうか迷いまして、いろいろ考えた結果結局 React と Redux で自作しました。]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -330,7 +330,7 @@
         <link href="https://blog.sugarshin.net/2016/06/05/published-oneteam-rte/">
         </link>
         <updated>2016-06-05T01:44:00Z</updated>
-        <summary type="html"><![CDATA[リッチテキストエディタ用の React コンポーネントを公開しました。GitHub: https://github.com/oneteam-dev/oneteam-rtenpm: https://www.npmjs.com/package/oneteam-rte]]></summary>
+        <summary type="html"><![CDATA[Mainリッチテキストエディタ用の React コンポーネントを公開しました。GitHub: https://github.com/oneteam-dev/oneteam-rtenpm: https://www.npmjs.com/package/oneteam-rte]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>

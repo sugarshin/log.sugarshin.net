@@ -4,7 +4,7 @@
         <title>blog.sugarshin.net</title>
         <link>https://blog.sugarshin.net</link>
         <description>sugarshin&apos;s blog</description>
-        <lastBuildDate>Mon, 10 Dec 2018 13:49:43 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 16 Dec 2018 00:00:38 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <copyright>sugarshin | Shingo Sato All rights reserved.</copyright>
@@ -53,7 +53,7 @@
             <link>https://blog.sugarshin.net/2018/06/17/hubot-fass-reservation/</link>
             <guid>https://blog.sugarshin.net/2018/06/17/hubot-fass-reservation/</guid>
             <pubDate>Sat, 16 Jun 2018 16:30:00 GMT</pubDate>
-            <description><![CDATA[FaSS の予約の順番待ちを確認したり、順番が近づくと通知してくれる Hubot スクリプトをつくりました。https://github.com/sugarshin/hubot-fass-reservationhubot-fass-reservation  -  npm]]></description>
+            <description><![CDATA[MainFaSS の予約の順番待ちを確認したり、順番が近づくと通知してくれる Hubot スクリプトをつくりました。https://github.com/sugarshin/hubot-fass-reservationhubot-fass-reservation  -  npm]]></description>
             <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
         </item>
         <item>
@@ -69,7 +69,7 @@
             <link>https://blog.sugarshin.net/2018/05/01/qiita-image-upload-cli-with-oclif/</link>
             <guid>https://blog.sugarshin.net/2018/05/01/qiita-image-upload-cli-with-oclif/</guid>
             <pubDate>Tue, 01 May 2018 14:35:00 GMT</pubDate>
-            <description><![CDATA[Qiita に画像をアップロードする CLI ツールを、 Heroku 製の CLI フレームワーク oclif を使ってつくってみました。$ yarn global add qiiuor]]></description>
+            <description><![CDATA[MainQiita に画像をアップロードする CLI ツールを、 Heroku 製の CLI フレームワーク oclif を使ってつくってみました。$ yarn global add qiiuor]]></description>
             <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
         </item>
         <item>
@@ -85,7 +85,7 @@
             <link>https://blog.sugarshin.net/2018/04/28/printing-style-notify-slack/</link>
             <guid>https://blog.sugarshin.net/2018/04/28/printing-style-notify-slack/</guid>
             <pubDate>Sat, 28 Apr 2018 07:00:00 GMT</pubDate>
-            <description><![CDATA[Web ページの印刷は、気をつけていないとスタイルくずれを起こしやすいかなと思います。それが、日々、機能追加や改善を行う Web アプリケーションとなるとさらにこの問題がでてきます。業務で開発している Web アプリケーションで印刷時のスタイリングをサポートするにあたり、継続的な見た目のチェックを自動化し、結果を Slack に通知するようにしました。]]></description>
+            <description><![CDATA[MainWeb ページの印刷は、気をつけていないとスタイルくずれを起こしやすいかなと思います。それが、日々、機能追加や改善を行う Web アプリケーションとなるとさらにこの問題がでてきます。業務で開発している Web アプリケーションで印刷時のスタイリングをサポートするにあたり、継続的な見た目のチェックを自動化し、結果を Slack に通知するようにしました。]]></description>
             <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
         </item>
         <item>
@@ -141,7 +141,7 @@
             <link>https://blog.sugarshin.net/2017/09/13/mo/</link>
             <guid>https://blog.sugarshin.net/2017/09/13/mo/</guid>
             <pubDate>Tue, 12 Sep 2017 16:58:00 GMT</pubDate>
-            <description><![CDATA[モバイルデバイスの Web ブラウザ用 CircleCI クライアントを公開しました。]]></description>
+            <description><![CDATA[Mainモバイルデバイスの Web ブラウザ用 CircleCI クライアントを公開しました。mo.gif]]></description>
             <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
         </item>
         <item>
@@ -181,7 +181,7 @@
             <link>https://blog.sugarshin.net/2017/05/07/automation-monthly-report/</link>
             <guid>https://blog.sugarshin.net/2017/05/07/automation-monthly-report/</guid>
             <pubDate>Sun, 07 May 2017 01:17:00 GMT</pubDate>
-            <description><![CDATA[月ごとに、 OSS コントリビューションや GitHub 上での活動をまとめたレポートの当ブログへの投稿を自動化しました。なかなかブログも書けないので、これから GitHub の月報を投稿していくことにしました。]]></description>
+            <description><![CDATA[Main月ごとに、 OSS コントリビューションや GitHub 上での活動をまとめたレポートの当ブログへの投稿を自動化しました。なかなかブログも書けないので、これから GitHub の月報を投稿していくことにしました。]]></description>
             <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
         </item>
         <item>
@@ -197,7 +197,7 @@
             <link>https://blog.sugarshin.net/2016/07/14/blog-like-software-development/</link>
             <guid>https://blog.sugarshin.net/2016/07/14/blog-like-software-development/</guid>
             <pubDate>Wed, 13 Jul 2016 15:52:00 GMT</pubDate>
-            <description><![CDATA[継続的なソフトウェア開発プロセスを取り入れ、最低限の SEO は考慮しつつ無理矢理 React でブログを作ってみたという話しです。個人ブログ開設にあたり何を使おうか迷いまして、いろいろ考えた結果結局 React と Redux で自作しました。]]></description>
+            <description><![CDATA[Main継続的なソフトウェア開発プロセスを取り入れ、最低限の SEO は考慮しつつ無理矢理 React でブログを作ってみたという話しです。個人ブログ開設にあたり何を使おうか迷いまして、いろいろ考えた結果結局 React と Redux で自作しました。]]></description>
             <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
         </item>
         <item>
@@ -205,7 +205,7 @@
             <link>https://blog.sugarshin.net/2016/06/05/published-oneteam-rte/</link>
             <guid>https://blog.sugarshin.net/2016/06/05/published-oneteam-rte/</guid>
             <pubDate>Sun, 05 Jun 2016 01:44:00 GMT</pubDate>
-            <description><![CDATA[リッチテキストエディタ用の React コンポーネントを公開しました。GitHub: https://github.com/oneteam-dev/oneteam-rtenpm: https://www.npmjs.com/package/oneteam-rte]]></description>
+            <description><![CDATA[Mainリッチテキストエディタ用の React コンポーネントを公開しました。GitHub: https://github.com/oneteam-dev/oneteam-rtenpm: https://www.npmjs.com/package/oneteam-rte]]></description>
             <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
         </item>
     </channel>
