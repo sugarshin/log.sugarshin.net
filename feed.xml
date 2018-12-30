@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.sugarshin.net</id>
     <title>blog.sugarshin.net</title>
-    <updated>2018-12-30T06:07:30Z</updated>
+    <updated>2018-12-30T06:24:00Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>sugarshin | Shingo Sato</name>
@@ -12,6 +12,19 @@
     <link rel="alternate" href="https://blog.sugarshin.net"/>
     <subtitle>sugarshin&apos;s blog</subtitle>
     <rights>sugarshin | Shingo Sato All rights reserved.</rights>
+    <entry>
+        <title type="html"><![CDATA[2018 年まとめ]]></title>
+        <id>https://blog.sugarshin.net/2018/12/30/matome-2018/</id>
+        <link href="https://blog.sugarshin.net/2018/12/30/matome-2018/">
+        </link>
+        <updated>2018-12-30T03:13:00Z</updated>
+        <summary type="html"><![CDATA[2018 年のまとめを書きます。Table of Contents仕事夏頃までは、 2016 年から所属している Oneteam Inc. にてアプリケーション開発に従事していました。主に、同社メイン製品の BtoB SaaS ツールの Web 版とデスクトップアプリケーションの開発をしたり、社内ツールの開発、メンテナンス等もおこなっていました。また、 1 月からは開発チームリードとして、開発チームとしての意思決定や開発フローの見直し等をおこなっていました。はじめての経験でうまくいかないことも多々ありましたが、良い経験をさせていただきました。]]></summary>
+        <author>
+            <name>sugarshin | Shingo Sato</name>
+            <email>shinsugar@gmail.com</email>
+            <uri>https://sugarshin.net/</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[[Monthly report] 2018-11 my activity this month on GitHub]]></title>
         <id>https://blog.sugarshin.net/2018/11/30/monthly-report-1811/</id>
