@@ -4,7 +4,7 @@
         <title>blog.sugarshin.net</title>
         <link>https://blog.sugarshin.net</link>
         <description>sugarshin&apos;s blog</description>
-        <lastBuildDate>Wed, 30 Jan 2019 20:59:28 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Jan 2019 21:13:52 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <copyright>sugarshin | Shingo Sato All rights reserved.</copyright>
@@ -21,7 +21,7 @@
             <link>https://blog.sugarshin.net/2018/12/30/matome-2018/</link>
             <guid>https://blog.sugarshin.net/2018/12/30/matome-2018/</guid>
             <pubDate>Sun, 30 Dec 2018 03:13:00 GMT</pubDate>
-            <description><![CDATA[2018 年のまとめを書きます。Table of Contents仕事夏頃までは、 2016 年から所属している Oneteam Inc. にてアプリケーション開発に従事していました。主に、同社メイン製品の BtoB SaaS ツールの Web 版とデスクトップアプリケーションの開発をしたり、社内ツールの開発、メンテナンス等もおこなっていました。また、 1 月からは開発チームリードとして、開発チームとしての意思決定や開発フローの見直し等をおこなっていました。はじめての経験でうまくいかないことも多々ありましたが、良い経験をさせていただきました。]]></description>
+            <description><![CDATA[2018 年のまとめを書きます。Table of Contents仕事夏頃までは、 2016 年から所属している Oneteam Inc. にてアプリケーション開発に従事していました。主に、同社メイン製品の BtoB SaaS ツールの Web 版と Electron によるデスクトップアプリケーションの開発をしたり、社内ツールの開発、メンテナンス等もおこなっていました。]]></description>
             <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
         </item>
         <item>
