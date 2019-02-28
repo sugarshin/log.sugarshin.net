@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.sugarshin.net</id>
     <title>blog.sugarshin.net</title>
-    <updated>2019-02-23T08:20:53Z</updated>
+    <updated>2019-02-28T15:11:47Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>sugarshin | Shingo Sato</name>
@@ -12,6 +12,19 @@
     <link rel="alternate" href="https://blog.sugarshin.net"/>
     <subtitle>sugarshin&apos;s blog</subtitle>
     <rights>sugarshin | Shingo Sato All rights reserved.</rights>
+    <entry>
+        <title type="html"><![CDATA[[Monthly report] 2019-02 my activity this month on GitHub]]></title>
+        <id>https://blog.sugarshin.net/2019/02/28/monthly-report-1902/</id>
+        <link href="https://blog.sugarshin.net/2019/02/28/monthly-report-1902/">
+        </link>
+        <updated>2019-02-28T14:30:00Z</updated>
+        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriessugarshin/docker-jest-puppeteer  description: null]]></summary>
+        <author>
+            <name>sugarshin | Shingo Sato</name>
+            <email>shinsugar@gmail.com</email>
+            <uri>https://sugarshin.net/</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[インスタンスゼロ株式会社を共同創業しました]]></title>
         <id>https://blog.sugarshin.net/2019/02/01/instance0/</id>
