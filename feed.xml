@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.sugarshin.net</id>
     <title>blog.sugarshin.net</title>
-    <updated>2019-03-31T15:06:23Z</updated>
+    <updated>2019-04-30T15:09:07Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>sugarshin | Shingo Sato</name>
@@ -12,6 +12,19 @@
     <link rel="alternate" href="https://blog.sugarshin.net"/>
     <subtitle>sugarshin&apos;s blog</subtitle>
     <rights>sugarshin | Shingo Sato All rights reserved.</rights>
+    <entry>
+        <title type="html"><![CDATA[[Monthly report] 2019-04 my activity this month on GitHub]]></title>
+        <id>https://blog.sugarshin.net/2019/04/30/monthly-report-1904/</id>
+        <link href="https://blog.sugarshin.net/2019/04/30/monthly-report-1904/">
+        </link>
+        <updated>2019-04-30T14:31:00Z</updated>
+        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめMake private repository publicsugarshin/guide-markdown-editor-build  description: undefined]]></summary>
+        <author>
+            <name>sugarshin | Shingo Sato</name>
+            <email>shinsugar@gmail.com</email>
+            <uri>https://sugarshin.net/</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[[Monthly report] 2019-03 my activity this month on GitHub]]></title>
         <id>https://blog.sugarshin.net/2019/03/31/monthly-report-1903/</id>
