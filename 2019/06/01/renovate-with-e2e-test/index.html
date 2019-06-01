@@ -1,0 +1,103 @@
+<!DOCTYPE html><html lang="ja"><head><meta charSet="utf-8"/><title>Renovate と E2E テストを用いて依存モジュールのアップデートを安全に自動化する | blog.sugarshin.net</title><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="title" content="Renovate と E2E テストを用いて依存モジュールのアップデートを安全に自動化する | blog.sugarshin.net"/><meta name="author" content="sugarshin | Shingo Sato"/><meta name="description" content="Main当ブログの Renovate でのライブラリのアップデート自動化を E2E テストを用いて安全に実行できる環境を整えました。React と Redux なブログ運用をソフトウェア開発する話し開設当初は Greenkeeper を利用していましたが、カスタマイズ性の高さで "/><meta property="og:title" content="Renovate と E2E テストを用いて依存モジュールのアップデートを安全に自動化する | blog.sugarshin.net"/><meta property="og:description" content="Main当ブログの Renovate でのライブラリのアップデート自動化を E2E テストを用いて安全に実行できる環境を整えました。React と Redux なブログ運用をソフトウェア開発する話し開設当初は Greenkeeper を利用していましたが、カスタマイズ性の高さで "/><meta property="og:type" content="article"/><meta property="og:image" content="https://blog.sugarshin.net/assets/images/2019/06/01/renovate-with-e2e-test/main.png"/><meta property="og:url" content="https://blog.sugarshin.net/2019/06/01/renovate-with-e2e-test/"/><meta property="og:site_name" content="blog.sugarshin.net"/><link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0 Feed" href="/rss.xml"/><link rel="shortcut icon" href="/favicon.ico"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="manifest" href="/manifest.json"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="blog.sugarshin.net"><link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="167x167" href="/apple-touch-icon-167x167.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png"><link rel="apple-touch-icon" sizes="1024x1024" href="/apple-touch-icon-1024x1024.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="blog.sugarshin.net"><meta name="msapplication-TileColor" content="#fff"><meta name="msapplication-TileImage" content="/mstile-144x144.png"><meta name="msapplication-config" content="/browserconfig.xml"><link href="/assets/vendor~a98cade3-35c48708d2b6d7f61bcb.css" rel="stylesheet"><link href="/assets/vendor~203e0718-83bc4cd89725f49b7068.css" rel="stylesheet"><link href="/assets/vendor~c1dd23ef-58d9389a804f7f9192cf.css" rel="stylesheet"><link href="/assets/app~f075b844-8db4f57a9d255b3efb73.css" rel="stylesheet"></head><body><div style="display:none"><h1>Renovate と E2E テストを用いて依存モジュールのアップデートを安全に自動化する | blog.sugarshin.net</h1><div><p><img src="/assets/images/2019/06/01/renovate-with-e2e-test/main.png" alt="Main"></p>
+<p>当ブログの <a href="https://renovatebot.com/">Renovate</a> でのライブラリのアップデート自動化を E2E テストを用いて安全に実行できる環境を整えました。</p>
+<p><em><a href="https://blog.sugarshin.net/2016/07/14/blog-like-software-development">React と Redux なブログ運用をソフトウェア開発する話し</a></em></p>
+<p>開設当初は <a href="https://greenkeeper.io/">Greenkeeper</a> を利用していましたが、カスタマイズ性の高さで 2018 末から Renovate に移行しています。 <a href="https://github.com/sugarshin/blog.sugarshin.net/pull/314">Configure Renovate by renovate · Pull Request #314 · sugarshin/blog.sugarshin.net</a></p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#%E3%83%A2%E3%83%81%E3%83%99%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3">モチベーション</a></li>
+<li><a href="#cypress">Cypress</a></li>
+<li><a href="#renovate">Renovate</a></li>
+<li><a href="#ci">CI</a></li>
+</ul>
+<h2 id="モチベーション">モチベーション</h2>
+<p>Renovate は依存モジュールにアップデートがあるとプルリクエストを作成してくれますが、設定次第ではその挙動をいろいろカスタマイズでき、さらにマージも自動でやってくれます。</p>
+<p>CI のステータスチェック次第で安全にマージできるので、ユニットテストやビルドだけではなく、 E2E テストも実行することでその安全性をより担保しました。</p>
+<p>そもそもの前提として、自分はソフトウェア開発プロセスの自動化についてはかなり積極的で、可能な限りそれを実施することで品質、スピード、スケーラビリティなどに寄与するほか、人的なオペレーションミスなども防げます。</p>
+<h2 id="cypress">Cypress</h2>
+<p>E2E テストについては、 <a href="https://www.cypress.io/">Cypress</a> を利用しています。オールインワンなフレームワークで、E2E テストに特化したフレームワークです。また、 Selenium を利用していなく独自のアーキテクチャで実行されている模様。インストールも npm からインストールするだけなので楽です。</p>
+<pre><code class="language-js">const url = require('url')
+const { siteName } = require('../../config/settings')
+
+context('Actions', () => {
+  beforeEach(() => {
+    cy.visit('/')
+  })
+
+  const subjects = [
+    `should page title "${siteName}"`,
+    'should have one or more article list on the top page',
+    'should change to article page when click each items on the top page',
+  ]
+
+  it(subjects.join('\n'), async () => {
+    cy.title().should('eq', siteName)
+
+    cy.get('#top-article-list > div').its('length').should('be.gt', 0)
+
+    // TODO: test to behavior of clicking main title
+    // click the more link of first article
+    cy.get('#top-article-list > div').eq(0).find('a').eq(1).click()
+
+    cy.url().should(pageUrl => {
+      const parsedUrl = url.parse(pageUrl)
+      expect(/^\/\d{4}\/\d{2}\/\d{2}\/[a-z0-9_-]+$/.test(parsedUrl.pathname)).to.ok
+    })
+
+    cy.title().should('not.eq', siteName)
+
+    cy.get('#article-detail .markdown-body > *').its('length').should('be.gt', 0)
+  })
+})
+</code></pre>
+<p>ref: <a href="https://github.com/sugarshin/blog.sugarshin.net/blob/598cfb1abe3d11c7ccc8951687bc3f95d6982a87/cypress/integration/index.test.js">https://github.com/sugarshin/blog.sugarshin.net/blob/598cfb1abe3d11c7ccc8951687bc3f95d6982a87/cypress/integration/index.test.js</a></p>
+<p>まだ最低限のテストケースしか書いてないので今後増やしていかないとです。</p>
+<p>個人的に、 Cypress の API が使いづらくてテスト書くのに時間かかります。</p>
+<h2 id="renovate">Renovate</h2>
+<p>公式の設定プリセットがとても充実しているのでそれらを眺めていればだいたいやりたいことはできます。 <a href="https://github.com/renovatebot/presets">renovatebot/presets</a></p>
+<p>デフォルトプリセットに <code>:automergeAll</code> があるのでこれを設定します。これですべてのパッケージに対してオートマージが効きます。 <a href="https://github.com/sugarshin/blog.sugarshin.net/blob/84a66d2d3c1eb951c4fd7d72a5f3ad22270414cd/renovate.json">https://github.com/sugarshin/blog.sugarshin.net/blob/84a66d2d3c1eb951c4fd7d72a5f3ad22270414cd/renovate.json</a></p>
+<p>ベースとなるコンフィグは自分用に汎用化してあって、ほかのプロジェクトやライブラリでも利用しています。</p>
+<p><a href="https://github.com/sugarshin/renovate-config">sugarshin/renovate-config: My shareable config for Renovate</a></p>
+<p>npm にパブリッシュしておくだけで設定を利用可能です。 <a href="https://www.npmjs.com/package/@sugarshin/renovate-config">@sugarshin/renovate-config  -  npm</a></p>
+<pre><code class="language-json">{
+  "extends": [
+    "@sugarshin:js-app"
+  ]
+}
+</code></pre>
+<p>また、 <code>prConcurrentLimit</code> や <code>prHourlyLimit</code> でプルリクエストの発行数を制限し、メインブランチが更新されるたびに Renovate が自身の全プルリクエストを更新して CI がものすごくスタックしていくのを防いでいます。</p>
+<ul>
+<li><a href="https://github.com/sugarshin/renovate-config/blob/903985ad15418268b9ccd1a098378d8487adc375/package.json#L52">https://github.com/sugarshin/renovate-config/blob/903985ad15418268b9ccd1a098378d8487adc375/package.json#L52</a></li>
+<li><a href="https://github.com/sugarshin/renovate-config/blob/903985ad15418268b9ccd1a098378d8487adc375/package.json#L59">https://github.com/sugarshin/renovate-config/blob/903985ad15418268b9ccd1a098378d8487adc375/package.json#L59</a></li>
+</ul>
+<h2 id="ci">CI</h2>
+<p>CircleCI の Orbs に Cypress 公式の Orb があるのでこれを利用します。 <a href="https://circleci.com/orbs/registry/orb/cypress-io/cypress">CircleCI Orb Registry - cypress-io/cypress</a></p>
+<pre><code class="language-yaml">version: 2.1
+orbs:
+  cypress: cypress-io/cypress@1.7.0
+workflows:
+  test_build_deploy:
+    jobs:
+      - cypress/run:
+          name: e2e_test
+          executor: cypress_browsers_chrome
+          yarn: true
+          cache-key: 'v1-dependencies-cypress-{{ checksum "yarn.lock" }}'
+          build: NODE_ENV=production npm run build:e2e-test
+          start: PORT=3000 node e2e-test/server
+          wait-on: 'http-get://localhost:3000'
+          browser: chrome
+          no-workspace: true
+          store_artifacts: true
+</code></pre>
+<p>ref: <a href="https://github.com/sugarshin/blog.sugarshin.net/blob/598cfb1abe3d11c7ccc8951687bc3f95d6982a87/.circleci/config.yml">https://github.com/sugarshin/blog.sugarshin.net/blob/598cfb1abe3d11c7ccc8951687bc3f95d6982a87/.circleci/config.yml</a></p>
+<p>Renovate が出した各プルリクエストに対してテストする必要があるので、プルリクエストごとの依存関係のモジュールらでビルドしたアセットで静的サーバを立ててそれに対して実行しています。</p>
+<p><code>cypress/run</code> ジョブがとれるオプションで、テスト前にビルドしたりサーバを立てたりできます。</p>
+<blockquote>
+<p><code>wait-on: 'http-get://localhost:3000'</code></p>
+</blockquote>
+<p>サーバが起動するまで待機させることができるのですが、 <code>wait-on</code> はデフォルトでは <code>OPTIONS</code> メソッドでリクエストをポーリングしてくるので、それ用のルーティングを用意する必要があります。もしくは指定オリジンのプロトコルを <code>http-get:</code> とすることで <code>GET</code> メソッドでリクエストしてくれます。今回 Express で静的リソースをホストしてるだけなのでこちらにしています。</p>
+<hr>
+<p>プライベートなプロジェクトでモジュールの更新は滞りがちだったのでこれでかなり改善できそう。 <a href="https://circleci.com/gh/sugarshin/blog.sugarshin.net">https://circleci.com/gh/sugarshin/blog.sugarshin.net</a></p></div></div><div id="app-root"></div><script>!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+analytics.load("K0C4nouS0njLcqt5oX0qFLOhdbq3zFwH");
+
+}}();</script><script type="text/javascript" src="/assets/vendor~253ae210-0bdf4968a702595ccf06.js"></script><script type="text/javascript" src="/assets/vendor~766b2e1e-2394b6377b786025079f.js"></script><script type="text/javascript" src="/assets/vendor~7274e1de-3bdfd0f9db97fe0d4e7a.js"></script><script type="text/javascript" src="/assets/vendor~a98cade3-104e813c7a42dc1f3e1f.js"></script><script type="text/javascript" src="/assets/vendor~b5906859-5633c9a55b238542610d.js"></script><script type="text/javascript" src="/assets/vendor~829e4993-d164775730bfb29fa5da.js"></script><script type="text/javascript" src="/assets/vendor~203e0718-91bce133d756ff90d177.js"></script><script type="text/javascript" src="/assets/vendor~7d359b94-9c55c53d4055295e9b35.js"></script><script type="text/javascript" src="/assets/vendor~690b702c-f2489156ecacf8327fee.js"></script><script type="text/javascript" src="/assets/vendor~323f991a-81a602f2e5f87012f123.js"></script><script type="text/javascript" src="/assets/vendor~56e1be11-17c34e1e223628cd6e34.js"></script><script type="text/javascript" src="/assets/vendor~31c708a5-0d00a49b2e4bb874b6ab.js"></script><script type="text/javascript" src="/assets/vendor~e258e298-9861f182ece9b85089c5.js"></script><script type="text/javascript" src="/assets/vendor~15f0789d-7f6913acd52d331389d2.js"></script><script type="text/javascript" src="/assets/vendor~0a56fd24-389b29bf1907ac3514c8.js"></script><script type="text/javascript" src="/assets/vendor~c1dd23ef-8a3b4d21d368a127105f.js"></script><script type="text/javascript" src="/assets/vendor~f9ca8911-f686223a340c59657497.js"></script><script type="text/javascript" src="/assets/vendor~678f84af-e065026d5b036e26ce24.js"></script><script type="text/javascript" src="/assets/vendor~b2b422a3-3c46804718fdc371ad65.js"></script><script type="text/javascript" src="/assets/vendor~3f764be9-e1d8cc182237def65d02.js"></script><script type="text/javascript" src="/assets/vendor~701f19e4-7ca96b90ebcef28fd7c9.js"></script><script type="text/javascript" src="/assets/vendor~62bec46e-38c91e48fddf835b5d70.js"></script><script type="text/javascript" src="/assets/vendor~11cd5f67-3fcdd52fcf380a855c24.js"></script><script type="text/javascript" src="/assets/vendor~35efa0d1-8c8b9890830eda7a25f3.js"></script><script type="text/javascript" src="/assets/app~f075b844-3cfc32e2e3de19294fe9.js"></script></body></html>

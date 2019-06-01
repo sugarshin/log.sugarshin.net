@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.sugarshin.net</id>
     <title>blog.sugarshin.net</title>
-    <updated>2019-06-01T15:34:41Z</updated>
+    <updated>2019-06-01T16:21:39Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>sugarshin | Shingo Sato</name>
@@ -12,6 +12,19 @@
     <link rel="alternate" href="https://blog.sugarshin.net"/>
     <subtitle>sugarshin&apos;s blog</subtitle>
     <rights>sugarshin | Shingo Sato All rights reserved.</rights>
+    <entry>
+        <title type="html"><![CDATA[Renovate と E2E テストを用いて依存モジュールのアップデートを安全に自動化する]]></title>
+        <id>https://blog.sugarshin.net/2019/06/01/renovate-with-e2e-test/</id>
+        <link href="https://blog.sugarshin.net/2019/06/01/renovate-with-e2e-test/">
+        </link>
+        <updated>2019-06-01T10:46:00Z</updated>
+        <summary type="html"><![CDATA[Main当ブログの Renovate でのライブラリのアップデート自動化を E2E テストを用いて安全に実行できる環境を整えました。React と Redux なブログ運用をソフトウェア開発する話し開設当初は Greenkeeper を利用していましたが、カスタマイズ性の高さで 2018 末から Renovate に移行しています。 Configure Renovate by renovate · Pull Request #314 · sugarshin/blog.sugarshin.net]]></summary>
+        <author>
+            <name>sugarshin | Shingo Sato</name>
+            <email>shinsugar@gmail.com</email>
+            <uri>https://sugarshin.net/</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[[Monthly report] 2019-05 my activity this month on GitHub]]></title>
         <id>https://blog.sugarshin.net/2019/05/31/monthly-report-1905/</id>
