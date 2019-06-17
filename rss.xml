@@ -4,7 +4,7 @@
         <title>blog.sugarshin.net</title>
         <link>https://blog.sugarshin.net</link>
         <description>sugarshin&apos;s blog</description>
-        <lastBuildDate>Sun, 16 Jun 2019 10:59:32 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 17 Jun 2019 03:14:41 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <copyright>sugarshin | Shingo Sato All rights reserved.</copyright>
@@ -13,7 +13,7 @@
             <link>https://blog.sugarshin.net/2019/06/01/renovate-with-e2e-test/</link>
             <guid>https://blog.sugarshin.net/2019/06/01/renovate-with-e2e-test/</guid>
             <pubDate>Sat, 01 Jun 2019 10:46:00 GMT</pubDate>
-            <description><![CDATA[Main当ブログの Renovate でのライブラリのアップデート自動化を E2E テストを用いて安全に実行できる環境を整えました。React と Redux なブログ運用をソフトウェア開発する話し開設当初は Greenkeeper を利用していましたが、カスタマイズ性の高さで 2018 末から Renovate に移行しています。 Configure Renovate by renovate · Pull Request #314 · sugarshin/blog.sugarshin.net]]></description>
+            <description><![CDATA[Main当ブログプロジェクトの依存モジュールのアップデートを、 Renovate と E2E テストを用いて安全に自動化する環境を整えました。React と Redux なブログ運用をソフトウェア開発する話しTable of Contents]]></description>
             <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
         </item>
         <item>
