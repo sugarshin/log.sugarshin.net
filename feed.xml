@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.sugarshin.net</id>
     <title>blog.sugarshin.net</title>
-    <updated>2019-06-23T16:02:32Z</updated>
+    <updated>2019-06-25T18:21:52Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>sugarshin | Shingo Sato</name>
@@ -12,6 +12,19 @@
     <link rel="alternate" href="https://blog.sugarshin.net"/>
     <subtitle>sugarshin&apos;s blog</subtitle>
     <rights>sugarshin | Shingo Sato All rights reserved.</rights>
+    <entry>
+        <title type="html"><![CDATA[CircleCI Orbs をつかって npm モジュール開発を効率化する]]></title>
+        <id>https://blog.sugarshin.net/2019/06/26/npm-modules-development-with-circleci-orbs/</id>
+        <link href="https://blog.sugarshin.net/2019/06/26/npm-modules-development-with-circleci-orbs/">
+        </link>
+        <updated>2019-06-25T17:30:00Z</updated>
+        <summary type="html"><![CDATA[npm コマンドを用途に合わせて便利にまとめたユーティリティを CircleCI Orbs として公開しました。CircleCI Orb Registry - sugarshin/npmsources: https://github.com/sugarshin/circleci-orbs]]></summary>
+        <author>
+            <name>sugarshin | Shingo Sato</name>
+            <email>shinsugar@gmail.com</email>
+            <uri>https://sugarshin.net/</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Renovate と E2E テストを用いて依存モジュールのアップデートを安全に自動化する]]></title>
         <id>https://blog.sugarshin.net/2019/06/01/renovate-with-e2e-test/</id>
