@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.sugarshin.net</id>
     <title>blog.sugarshin.net</title>
-    <updated>2020-04-09T23:55:55.008Z</updated>
+    <updated>2020-04-30T15:14:02.068Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>sugarshin | Shingo Sato</name>
@@ -13,6 +13,18 @@
     <subtitle>sugarshin's blog</subtitle>
     <logo>https://sugarshin.net/images/s.png</logo>
     <rights>sugarshin | Shingo Sato All rights reserved.</rights>
+    <entry>
+        <title type="html"><![CDATA[[Monthly report] 2020-04 my activity this month on GitHub]]></title>
+        <id>https://blog.sugarshin.net/2020/04/30/monthly-report-2004/</id>
+        <link href="https://blog.sugarshin.net/2020/04/30/monthly-report-2004/"/>
+        <updated>2020-04-30T14:32:00.000Z</updated>
+        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriessugarshin/docker-ubuntu-node-browsers  description: null]]></summary>
+        <author>
+            <name>sugarshin | Shingo Sato</name>
+            <email>shinsugar@gmail.com</email>
+            <uri>https://sugarshin.net/</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[[Monthly report] 2020-03 my activity this month on GitHub]]></title>
         <id>https://blog.sugarshin.net/2020/03/31/monthly-report-2003/</id>
