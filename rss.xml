@@ -4,7 +4,7 @@
         <title>blog.sugarshin.net</title>
         <link>https://blog.sugarshin.net</link>
         <description>sugarshin's blog</description>
-        <lastBuildDate>Mon, 31 Aug 2020 13:44:15 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 31 Aug 2020 15:15:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -13,6 +13,14 @@
             <link>https://blog.sugarshin.net</link>
         </image>
         <copyright>sugarshin | Shingo Sato All rights reserved.</copyright>
+        <item>
+            <title><![CDATA[[Monthly report] 2020-08 my activity this month on GitHub]]></title>
+            <link>https://blog.sugarshin.net/2020/08/31/monthly-report-2008/</link>
+            <guid>https://blog.sugarshin.net/2020/08/31/monthly-report-2008/</guid>
+            <pubDate>Mon, 31 Aug 2020 14:33:00 GMT</pubDate>
+            <description><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriessugarshin/apiflash-proxy  description: null]]></description>
+            <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
+        </item>
         <item>
             <title><![CDATA[オンラインストアの入荷情報を Slack に通知する]]></title>
             <link>https://blog.sugarshin.net/2020/08/26/sp-product-arrival-notifier/</link>
