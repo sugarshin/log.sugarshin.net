@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.sugarshin.net</id>
     <title>blog.sugarshin.net</title>
-    <updated>2020-09-20T04:42:52.792Z</updated>
+    <updated>2020-09-20T10:14:21.315Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>sugarshin | Shingo Sato</name>
@@ -18,7 +18,7 @@
         <id>https://blog.sugarshin.net/2020/08/31/monthly-report-2008/</id>
         <link href="https://blog.sugarshin.net/2020/08/31/monthly-report-2008/"/>
         <updated>2020-08-31T14:33:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriessugarshin/apiflash-proxy  description: null]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Create new repositories  sugarshin/apiflash-proxy  description: null  created_at: 2020-08-...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -30,7 +30,7 @@
         <id>https://blog.sugarshin.net/2020/08/26/sp-product-arrival-notifier/</id>
         <link href="https://blog.sugarshin.net/2020/08/26/sp-product-arrival-notifier/"/>
         <updated>2020-08-25T17:03:00.000Z</updated>
-        <summary type="html"><![CDATA[Snow Peak 公式オンラインストアの製品入荷情報を Slack に通知する仕組みを雑につくりました。Table of Contentsモチベーション]]></summary>
+        <summary type="html"><![CDATA[    Snow Peak 公式オンラインストアの製品入荷情報を Slack に通知する仕組みを雑につくりました。  Table of Contents  モチベーション  アーキテクチャ  Artifact  通知  モチベーション  Snow Peak は最近お気に入り...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -42,7 +42,7 @@
         <id>https://blog.sugarshin.net/2020/06/30/monthly-report-2006/</id>
         <link href="https://blog.sugarshin.net/2020/06/30/monthly-report-2006/"/>
         <updated>2020-06-30T14:31:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめReleasesRelease 13.0.0-node12.17.0 · sugarshin/docker-circleci-node-browsers-fonts  description: circleci/node-browsers + fonts]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Releases  Release 13.0.0-node12.17.0 · sugarshin/docker-circleci-node-browsers-fonts  desc...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -54,7 +54,7 @@
         <id>https://blog.sugarshin.net/2020/05/31/monthly-report-2005/</id>
         <link href="https://blog.sugarshin.net/2020/05/31/monthly-report-2005/"/>
         <updated>2020-05-31T14:31:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめReleasesRelease 2.1.0-node12 · sugarshin/docker-playwright-base  description: Docker image with Playwright dependencies]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Releases  Release 2.1.0-node12 · sugarshin/docker-playwright-base  description: Docker ima...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -66,7 +66,7 @@
         <id>https://blog.sugarshin.net/2020/04/30/monthly-report-2004/</id>
         <link href="https://blog.sugarshin.net/2020/04/30/monthly-report-2004/"/>
         <updated>2020-04-30T14:32:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriessugarshin/docker-ubuntu-node-browsers  description: null]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Create new repositories  sugarshin/docker-ubuntu-node-browsers  description: null  created...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -78,7 +78,7 @@
         <id>https://blog.sugarshin.net/2020/03/31/monthly-report-2003/</id>
         <link href="https://blog.sugarshin.net/2020/03/31/monthly-report-2003/"/>
         <updated>2020-03-31T14:31:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriessugarshin/mon  description: null]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Create new repositories  sugarshin/mon  description: null  created_at: 2020-03-26T11:26:15...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -90,7 +90,7 @@
         <id>https://blog.sugarshin.net/2020/02/29/monthly-report-2002/</id>
         <link href="https://blog.sugarshin.net/2020/02/29/monthly-report-2002/"/>
         <updated>2020-02-29T14:31:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriessugarshin/required-labels-action  description: null]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Create new repositories  sugarshin/required-labels-action  description: null  created_at: ...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -102,7 +102,7 @@
         <id>https://blog.sugarshin.net/2020/01/31/monthly-report-2001/</id>
         <link href="https://blog.sugarshin.net/2020/01/31/monthly-report-2001/"/>
         <updated>2020-01-31T14:31:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriessugarshin/k8s-tr  description: null]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Create new repositories  sugarshin/k8s-tr  description: null  created_at: 2020-01-14T01:44...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -114,7 +114,7 @@
         <id>https://blog.sugarshin.net/2019/12/31/monthly-report-1912/</id>
         <link href="https://blog.sugarshin.net/2019/12/31/monthly-report-1912/"/>
         <updated>2019-12-31T14:31:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめReleasesRelease 12.13.2 · sugarshin/docker-circleci-node-browsers-fonts  description: circleci/node-browsers + fonts]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Releases  Release 12.13.2 · sugarshin/docker-circleci-node-browsers-fonts  description: ci...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -126,7 +126,7 @@
         <id>https://blog.sugarshin.net/2019/12/29/matome-2019/</id>
         <link href="https://blog.sugarshin.net/2019/12/29/matome-2019/"/>
         <updated>2019-12-28T15:04:00.000Z</updated>
-        <summary type="html"><![CDATA[2019 年のまとめを書きます。Table of Contents仕事]]></summary>
+        <summary type="html"><![CDATA[    2019 年のまとめを書きます。  Table of Contents  仕事  インスタンスゼロ  メルカリ  メルペイ  Web Platform チーム  つくったもの  プライベート  引越し  断酒  2020 年  仕事  インスタンスゼロ  ここでもお...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -138,7 +138,7 @@
         <id>https://blog.sugarshin.net/2019/09/30/monthly-report-1909/</id>
         <link href="https://blog.sugarshin.net/2019/09/30/monthly-report-1909/"/>
         <updated>2019-09-30T14:31:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめPull requestsAdd TARGET_DATE option · Pull Request #2 · nekobato/pagerduty-schedule-attendee  created_at: 2019-09-09T04:17:00Z]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Pull requests  Add TARGET_DATE option · Pull Request #2 · nekobato/pagerduty-schedule-atte...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -150,7 +150,7 @@
         <id>https://blog.sugarshin.net/2019/07/31/monthly-report-1907/</id>
         <link href="https://blog.sugarshin.net/2019/07/31/monthly-report-1907/"/>
         <updated>2019-07-31T14:32:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめReleasesRelease v0.4.7 · oneteam-dev/react-oneteam  description: Oneteam specific React components]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Releases  Release v0.4.7 · oneteam-dev/react-oneteam  description: Oneteam specific React ...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -162,7 +162,7 @@
         <id>https://blog.sugarshin.net/2019/06/30/monthly-report-1906/</id>
         <link href="https://blog.sugarshin.net/2019/06/30/monthly-report-1906/"/>
         <updated>2019-06-30T14:31:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriessugarshin/slides  description: null]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Create new repositories  sugarshin/slides  description: null  created_at: 2019-06-26T14:19...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -174,7 +174,7 @@
         <id>https://blog.sugarshin.net/2019/06/26/npm-modules-development-with-circleci-orbs/</id>
         <link href="https://blog.sugarshin.net/2019/06/26/npm-modules-development-with-circleci-orbs/"/>
         <updated>2019-06-25T17:30:00.000Z</updated>
-        <summary type="html"><![CDATA[npm コマンドを用途に合わせて便利にまとめたユーティリティを CircleCI Orbs として公開しました。CircleCI Orb Registry - sugarshin/npmsources: https://github.com/sugarshin/circleci-orbs]]></summary>
+        <summary type="html"><![CDATA[    npm コマンドを用途に合わせて便利にまとめたユーティリティを CircleCI Orbs として公開しました。  CircleCI Orb Registry - sugarshin/npm  sources: https://github.com/sugarshi...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -186,7 +186,7 @@
         <id>https://blog.sugarshin.net/2019/06/01/renovate-with-e2e-test/</id>
         <link href="https://blog.sugarshin.net/2019/06/01/renovate-with-e2e-test/"/>
         <updated>2019-06-01T10:46:00.000Z</updated>
-        <summary type="html"><![CDATA[Main当ブログプロジェクトの依存モジュールのアップデートを、 Renovate と E2E テストを用いて安全に自動化する環境を整えました。React と Redux なブログ運用をソフトウェア開発する話しTable of Contents]]></summary>
+        <summary type="html"><![CDATA[  Main  当ブログプロジェクトの依存モジュールのアップデートを、 Renovate と E2E テストを用いて安全に自動化する環境を整えました。  React と Redux なブログ運用をソフトウェア開発する話し  Table of Contents  モチベーショ...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -198,7 +198,7 @@
         <id>https://blog.sugarshin.net/2019/05/31/monthly-report-1905/</id>
         <link href="https://blog.sugarshin.net/2019/05/31/monthly-report-1905/"/>
         <updated>2019-05-31T14:31:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめReleasesRelease v4.0.0 · sugarshin/renovate-config  description: My shareable config for Renovate]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Releases  Release v4.0.0 · sugarshin/renovate-config  description: My shareable config for...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -210,7 +210,7 @@
         <id>https://blog.sugarshin.net/2019/04/30/monthly-report-1904/</id>
         <link href="https://blog.sugarshin.net/2019/04/30/monthly-report-1904/"/>
         <updated>2019-04-30T14:31:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめMake private repository publicsugarshin/guide-markdown-editor-build  description: undefined]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Make private repository public  sugarshin/guide-markdown-editor-build  description: undefi...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -222,7 +222,7 @@
         <id>https://blog.sugarshin.net/2019/03/31/monthly-report-1903/</id>
         <link href="https://blog.sugarshin.net/2019/03/31/monthly-report-1903/"/>
         <updated>2019-03-31T14:30:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめPull requestsFix a typo for method name · Pull Request #15 · fukuiretu/nuxt-user-agent  created_at: 2019-03-28T06:00:58Z]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Pull requests  Fix a typo for method name · Pull Request #15 · fukuiretu/nuxt-user-agent  ...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -234,7 +234,7 @@
         <id>https://blog.sugarshin.net/2019/02/28/monthly-report-1902/</id>
         <link href="https://blog.sugarshin.net/2019/02/28/monthly-report-1902/"/>
         <updated>2019-02-28T14:30:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriessugarshin/docker-jest-puppeteer  description: null]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Create new repositories  sugarshin/docker-jest-puppeteer  description: null  created_at: 2...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -246,7 +246,7 @@
         <id>https://blog.sugarshin.net/2019/02/01/instance0/</id>
         <link href="https://blog.sugarshin.net/2019/02/01/instance0/"/>
         <updated>2019-01-31T15:00:00.000Z</updated>
-        <summary type="html"><![CDATA[これまでにソフトウェア開発を通じて知り合えた仲間たちと 5 名で会社を立ち上げました。https://ins0.jp詳しくは代表のブログにて]]></summary>
+        <summary type="html"><![CDATA[    これまでにソフトウェア開発を通じて知り合えた仲間たちと 5 名で会社を立ち上げました。  https://ins0.jp  詳しくは代表のブログにて  顧客・自社に関わらず、0番目のインスタンスを生産し続けていきます。  法人という小さな枠で技術や知識を閉じ込めるの...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -258,7 +258,7 @@
         <id>https://blog.sugarshin.net/2019/01/31/monthly-report-1901/</id>
         <link href="https://blog.sugarshin.net/2019/01/31/monthly-report-1901/"/>
         <updated>2019-01-31T14:30:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriessugarshin-sandbox/todomvc-vue  description: null]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Create new repositories  sugarshin-sandbox/todomvc-vue  description: null  created_at: 201...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -270,7 +270,7 @@
         <id>https://blog.sugarshin.net/2018/12/31/monthly-report-1812/</id>
         <link href="https://blog.sugarshin.net/2018/12/31/monthly-report-1812/"/>
         <updated>2018-12-31T14:30:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriessugarshin/react-pdfobject  description: null]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Create new repositories  sugarshin/react-pdfobject  description: null  created_at: 2018-12...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -282,7 +282,7 @@
         <id>https://blog.sugarshin.net/2018/12/30/matome-2018/</id>
         <link href="https://blog.sugarshin.net/2018/12/30/matome-2018/"/>
         <updated>2018-12-30T03:13:00.000Z</updated>
-        <summary type="html"><![CDATA[2018 年のまとめを書きます。Table of Contents仕事夏頃までは、 2016 年から所属している Oneteam Inc. にてアプリケーション開発に従事していました。主に、同社メイン製品の BtoB SaaS ツールの Web 版と Electron によるデスクトップアプリケーションの開発をしたり、社内ツールの開発、メンテナンス等もおこなっていました。]]></summary>
+        <summary type="html"><![CDATA[  2018 年のまとめを書きます。  Table of Contents  仕事  技術  OSS  プライベート  2019 年  仕事  夏頃までは、 2016 年から所属している Oneteam Inc. にてアプリケーション開発に従事していました。主に、同社メイン...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -294,7 +294,7 @@
         <id>https://blog.sugarshin.net/2018/11/30/monthly-report-1811/</id>
         <link href="https://blog.sugarshin.net/2018/11/30/monthly-report-1811/"/>
         <updated>2018-11-30T14:31:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriessugarshin/react-component-from-prop  description: null]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Create new repositories  sugarshin/react-component-from-prop  description: null  created_a...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -306,7 +306,7 @@
         <id>https://blog.sugarshin.net/2018/09/30/monthly-report-1809/</id>
         <link href="https://blog.sugarshin.net/2018/09/30/monthly-report-1809/"/>
         <updated>2018-09-30T14:31:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriesremap-app/services-js  description: null]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Create new repositories  remap-app/services-js  description: null  created_at: 2018-09-25T...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -318,7 +318,7 @@
         <id>https://blog.sugarshin.net/2018/08/31/monthly-report-1808/</id>
         <link href="https://blog.sugarshin.net/2018/08/31/monthly-report-1808/"/>
         <updated>2018-08-31T14:31:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriesremap-app/stocks  description: null]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Create new repositories  remap-app/stocks  description: null  created_at: 2018-08-23T15:06...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -330,7 +330,7 @@
         <id>https://blog.sugarshin.net/2018/07/31/monthly-report-1807/</id>
         <link href="https://blog.sugarshin.net/2018/07/31/monthly-report-1807/"/>
         <updated>2018-07-31T14:31:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriesremap-app/logo  description: ReMap logo]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Create new repositories  remap-app/logo  description: ReMap logo  created_at: 2018-07-22T0...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -342,7 +342,7 @@
         <id>https://blog.sugarshin.net/2018/06/30/monthly-report-1806/</id>
         <link href="https://blog.sugarshin.net/2018/06/30/monthly-report-1806/"/>
         <updated>2018-06-30T14:31:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriessugarshin/hubot-fass-reservation  description: null]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Create new repositories  sugarshin/hubot-fass-reservation  description: null  created_at: ...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -354,7 +354,7 @@
         <id>https://blog.sugarshin.net/2018/06/17/hubot-fass-reservation/</id>
         <link href="https://blog.sugarshin.net/2018/06/17/hubot-fass-reservation/"/>
         <updated>2018-06-16T16:30:00.000Z</updated>
-        <summary type="html"><![CDATA[MainFaSS の予約の順番待ちを確認したり、順番が近づくと通知してくれる Hubot スクリプトをつくりました。https://github.com/sugarshin/hubot-fass-reservationhubot-fass-reservation  -  npm]]></summary>
+        <summary type="html"><![CDATA[  Main  FaSS の予約の順番待ちを確認したり、順番が近づくと通知してくれる Hubot スクリプトをつくりました。  https://github.com/sugarshin/hubot-fass-reservation  hubot-fass-reservati...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -366,7 +366,7 @@
         <id>https://blog.sugarshin.net/2018/05/31/monthly-report-1805/</id>
         <link href="https://blog.sugarshin.net/2018/05/31/monthly-report-1805/"/>
         <updated>2018-05-31T14:31:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriessugarshin/qiiu  description: null]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Create new repositories  sugarshin/qiiu  description: null  created_at: 2018-05-01T01:46:4...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -378,7 +378,7 @@
         <id>https://blog.sugarshin.net/2018/05/01/qiita-image-upload-cli-with-oclif/</id>
         <link href="https://blog.sugarshin.net/2018/05/01/qiita-image-upload-cli-with-oclif/"/>
         <updated>2018-05-01T14:35:00.000Z</updated>
-        <summary type="html"><![CDATA[MainQiita に画像をアップロードする CLI ツールを、 Heroku 製の CLI フレームワーク oclif を使ってつくってみました。$ yarn global add qiiuor]]></summary>
+        <summary type="html"><![CDATA[  Main  Qiita に画像をアップロードする CLI ツールを、 Heroku 製の CLI フレームワーク oclif を使ってつくってみました。    qiiu  -  npm  https://github.com/sugarshin/qiiu    Tabl...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -390,7 +390,7 @@
         <id>https://blog.sugarshin.net/2018/04/30/monthly-report-1804/</id>
         <link href="https://blog.sugarshin.net/2018/04/30/monthly-report-1804/"/>
         <updated>2018-04-30T14:31:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriessugarshin/docker-nodejs-puppeteer  description: null]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Create new repositories  sugarshin/docker-nodejs-puppeteer  description: null  created_at:...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -402,7 +402,7 @@
         <id>https://blog.sugarshin.net/2018/04/28/printing-style-notify-slack/</id>
         <link href="https://blog.sugarshin.net/2018/04/28/printing-style-notify-slack/"/>
         <updated>2018-04-28T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[MainWeb ページの印刷は、気をつけていないとスタイルくずれを起こしやすいかなと思います。それが、日々、機能追加や改善を行う Web アプリケーションとなるとさらにこの問題がでてきます。業務で開発している Web アプリケーションで印刷時のスタイリングをサポートするにあたり、継続的な見た目のチェックを自動化し、結果を Slack に通知するようにしました。]]></summary>
+        <summary type="html"><![CDATA[  Main  Web ページの印刷は、気をつけていないとスタイルくずれを起こしやすいかなと思います。それが、日々、機能追加や改善を行う Web アプリケーションとなるとさらにこの問題がでてきます。  業務で開発している Web アプリケーションで印刷時のスタイリングをサポ...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -414,7 +414,7 @@
         <id>https://blog.sugarshin.net/2018/03/31/monthly-report-1803/</id>
         <link href="https://blog.sugarshin.net/2018/03/31/monthly-report-1803/"/>
         <updated>2018-03-31T14:31:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriessugarshin/gatsby-starter-netlify-cms  description: null]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Create new repositories  sugarshin/gatsby-starter-netlify-cms  description: null  created_...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -426,7 +426,7 @@
         <id>https://blog.sugarshin.net/2018/02/28/monthly-report-1802/</id>
         <link href="https://blog.sugarshin.net/2018/02/28/monthly-report-1802/"/>
         <updated>2018-02-28T14:31:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriessugarshin/react-minimal-error-boundary  description: null]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Create new repositories  sugarshin/react-minimal-error-boundary  description: null  create...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -438,7 +438,7 @@
         <id>https://blog.sugarshin.net/2018/01/31/monthly-report-1801/</id>
         <link href="https://blog.sugarshin.net/2018/01/31/monthly-report-1801/"/>
         <updated>2018-01-31T14:30:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriesoneteam-dev/browserslist-config-oneteam  description: null]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Create new repositories  oneteam-dev/browserslist-config-oneteam  description: null  creat...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -450,7 +450,7 @@
         <id>https://blog.sugarshin.net/2017/12/31/monthly-report-1712/</id>
         <link href="https://blog.sugarshin.net/2017/12/31/monthly-report-1712/"/>
         <updated>2017-12-31T14:51:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriesoneteam-dev/oneteam-ja-proofreader  description: null]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Create new repositories  oneteam-dev/oneteam-ja-proofreader  description: null  created_at...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -462,7 +462,7 @@
         <id>https://blog.sugarshin.net/2017/10/31/monthly-report-1710/</id>
         <link href="https://blog.sugarshin.net/2017/10/31/monthly-report-1710/"/>
         <updated>2017-10-31T14:33:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめReleasesRelease v2.0.6 · sugarshin/draft-js-checkable-list-item  description: Checkable list item for Draft.js]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Releases  Release v2.0.6 · sugarshin/draft-js-checkable-list-item  description: Checkable ...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -474,7 +474,7 @@
         <id>https://blog.sugarshin.net/2017/09/30/monthly-report-1709/</id>
         <link href="https://blog.sugarshin.net/2017/09/30/monthly-report-1709/"/>
         <updated>2017-09-30T14:33:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめMake private repository publicsugarshin/mo  description: undefined]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Make private repository public  sugarshin/mo  description: undefined  created_at: 2017-09-...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -486,7 +486,7 @@
         <id>https://blog.sugarshin.net/2017/09/13/mo/</id>
         <link href="https://blog.sugarshin.net/2017/09/13/mo/"/>
         <updated>2017-09-12T16:58:00.000Z</updated>
-        <summary type="html"><![CDATA[Mainモバイルデバイスの Web ブラウザ用 CircleCI クライアントを公開しました。mo.gif]]></summary>
+        <summary type="html"><![CDATA[  Main  モバイルデバイスの Web ブラウザ用 CircleCI クライアントを公開しました。    mo.gif  mo - CircleCI client for mobile web  https://github.com/sugarshin/mo/  Tab...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -498,7 +498,7 @@
         <id>https://blog.sugarshin.net/2017/08/31/monthly-report-1708/</id>
         <link href="https://blog.sugarshin.net/2017/08/31/monthly-report-1708/"/>
         <updated>2017-08-31T14:32:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriessugarshin/qiita-sync.blog.sugarshin.net  description: null]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Create new repositories  sugarshin/qiita-sync.blog.sugarshin.net  description: null  creat...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -510,7 +510,7 @@
         <id>https://blog.sugarshin.net/2017/07/31/monthly-report-1707/</id>
         <link href="https://blog.sugarshin.net/2017/07/31/monthly-report-1707/"/>
         <updated>2017-07-31T14:32:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめCreate new repositoriessugarshin/redux-camelize  description: null]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Create new repositories  sugarshin/redux-camelize  description: null  created_at: 2017-07-...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -522,7 +522,7 @@
         <id>https://blog.sugarshin.net/2017/06/30/monthly-report-1706/</id>
         <link href="https://blog.sugarshin.net/2017/06/30/monthly-report-1706/"/>
         <updated>2017-06-30T14:32:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめPull requestsUpdate dependencies for linkify-plugin · Pull Request #783 · draft-js-plugins/draft-js-plugins  created_at: 2017-06-29T05:11:04Z]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Pull requests  Update dependencies for linkify-plugin · Pull Request #783 · draft-js-plugi...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -534,7 +534,7 @@
         <id>https://blog.sugarshin.net/2017/05/31/monthly-report-1705/</id>
         <link href="https://blog.sugarshin.net/2017/05/31/monthly-report-1705/"/>
         <updated>2017-05-30T15:36:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめMake private repository publicsugarshin/sugarshin-hubot  description: undefined]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Make private repository public  sugarshin/sugarshin-hubot  description: undefined  created...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -546,7 +546,7 @@
         <id>https://blog.sugarshin.net/2017/05/07/automation-monthly-report/</id>
         <link href="https://blog.sugarshin.net/2017/05/07/automation-monthly-report/"/>
         <updated>2017-05-07T01:17:00.000Z</updated>
-        <summary type="html"><![CDATA[Main月ごとに、 OSS コントリビューションや GitHub 上での活動をまとめたレポートの当ブログへの投稿を自動化しました。なかなかブログも書けないので、これから GitHub の月報を投稿していくことにしました。]]></summary>
+        <summary type="html"><![CDATA[  Main  月ごとに、 OSS コントリビューションや GitHub 上での活動をまとめたレポートの当ブログへの投稿を自動化しました。    なかなかブログも書けないので、これから GitHub の月報を投稿していくことにしました。  \[Monthly report]...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -558,7 +558,7 @@
         <id>https://blog.sugarshin.net/2017/04/30/monthly-report-1704/</id>
         <link href="https://blog.sugarshin.net/2017/04/30/monthly-report-1704/"/>
         <updated>2017-04-29T15:00:00.000Z</updated>
-        <summary type="html"><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめPull requestsmerged Fix files · Pull Request #3 · sugarshin/draft-js-modifiers  merged_at: 2017-04-29T06:07:53Z]]></summary>
+        <summary type="html"><![CDATA[  今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Pull requests  merged Fix files · Pull Request #3 · sugarshin/draft-js-modifiers  merged_a...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -570,7 +570,7 @@
         <id>https://blog.sugarshin.net/2016/07/14/blog-like-software-development/</id>
         <link href="https://blog.sugarshin.net/2016/07/14/blog-like-software-development/"/>
         <updated>2016-07-13T15:52:00.000Z</updated>
-        <summary type="html"><![CDATA[Main継続的なソフトウェア開発プロセスを取り入れ、最低限の SEO は考慮しつつ無理矢理 React でブログを作ってみたという話しです。個人ブログ開設にあたり何を使おうか迷いまして、いろいろ考えた結果結局 React と Redux で自作しました。]]></summary>
+        <summary type="html"><![CDATA[  Main  継続的なソフトウェア開発プロセスを取り入れ、最低限の SEO は考慮しつつ無理矢理 React でブログを作ってみたという話しです。    個人ブログ開設にあたり何を使おうか迷いまして、いろいろ考えた結果結局 React と Redux で自作しました。  ...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
@@ -582,7 +582,7 @@
         <id>https://blog.sugarshin.net/2016/06/05/published-oneteam-rte/</id>
         <link href="https://blog.sugarshin.net/2016/06/05/published-oneteam-rte/"/>
         <updated>2016-06-05T01:44:00.000Z</updated>
-        <summary type="html"><![CDATA[Mainリッチテキストエディタ用の React コンポーネントを公開しました。GitHub: https://github.com/oneteam-dev/oneteam-rtenpm: https://www.npmjs.com/package/oneteam-rte]]></summary>
+        <summary type="html"><![CDATA[  Main  リッチテキストエディタ用の React コンポーネントを公開しました。  GitHub: https://github.com/oneteam-dev/oneteam-rte  npm: https://www.npmjs.com/package/onete...]]></summary>
         <author>
             <name>sugarshin | Shingo Sato</name>
             <email>shinsugar@gmail.com</email>
