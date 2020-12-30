@@ -4,7 +4,7 @@
         <title>blog.sugarshin.net</title>
         <link>https://blog.sugarshin.net</link>
         <description>sugarshin's blog</description>
-        <lastBuildDate>Tue, 29 Dec 2020 22:39:16 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Dec 2020 00:26:07 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -13,6 +13,14 @@
             <link>https://blog.sugarshin.net</link>
         </image>
         <copyright>sugarshin | Shingo Sato All rights reserved.</copyright>
+        <item>
+            <title><![CDATA[2020 年まとめ]]></title>
+            <link>https://blog.sugarshin.net/2020/12/30/matome-2020/</link>
+            <guid>https://blog.sugarshin.net/2020/12/30/matome-2020/</guid>
+            <pubDate>Tue, 29 Dec 2020 23:00:00 GMT</pubDate>
+            <description><![CDATA[2020 年のまとめを書きます。  Table of Contents  仕事  インスタンスゼロ  メルカリ  LINE  つくったもの  父  キャンプ  Snow Peak Way 2020  糖質制限  2021年  仕事  2020年の劇的な世の中の変化に伴い、2...]]></description>
+            <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
+        </item>
         <item>
             <title><![CDATA[[Monthly report] 2020-11 my activity this month on GitHub]]></title>
             <link>https://blog.sugarshin.net/2020/11/30/monthly-report-2011/</link>
