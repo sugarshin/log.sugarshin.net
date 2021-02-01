@@ -4,7 +4,7 @@
         <title>blog.sugarshin.net</title>
         <link>https://blog.sugarshin.net</link>
         <description>sugarshin's blog</description>
-        <lastBuildDate>Fri, 29 Jan 2021 18:55:55 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 01 Feb 2021 01:02:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -13,6 +13,14 @@
             <link>https://blog.sugarshin.net</link>
         </image>
         <copyright>sugarshin | Shingo Sato All rights reserved.</copyright>
+        <item>
+            <title><![CDATA[[Monthly report] 2021-01 my activity this month on GitHub]]></title>
+            <link>https://blog.sugarshin.net/2021/01/31/monthly-report-2101/</link>
+            <guid>https://blog.sugarshin.net/2021/01/31/monthly-report-2101/</guid>
+            <pubDate>Sun, 31 Jan 2021 14:33:00 GMT</pubDate>
+            <description><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Create new repositories  sugarshin/docker-cimg-node-gh  description: null  created_at: 2021-...]]></description>
+            <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
+        </item>
         <item>
             <title><![CDATA[[Monthly report] 2020-12 my activity this month on GitHub]]></title>
             <link>https://blog.sugarshin.net/2020/12/31/monthly-report-2012/</link>
