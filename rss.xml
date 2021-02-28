@@ -4,7 +4,7 @@
         <title>blog.sugarshin.net</title>
         <link>https://blog.sugarshin.net</link>
         <description>sugarshin's blog</description>
-        <lastBuildDate>Sun, 28 Feb 2021 02:34:45 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 28 Feb 2021 20:41:42 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -13,6 +13,14 @@
             <link>https://blog.sugarshin.net</link>
         </image>
         <copyright>sugarshin | Shingo Sato All rights reserved.</copyright>
+        <item>
+            <title><![CDATA[[Monthly report] 2021-02 my activity this month on GitHub]]></title>
+            <link>https://blog.sugarshin.net/2021/02/28/monthly-report-2102/</link>
+            <guid>https://blog.sugarshin.net/2021/02/28/monthly-report-2102/</guid>
+            <pubDate>Sun, 28 Feb 2021 14:31:00 GMT</pubDate>
+            <description><![CDATA[今月の主な OSS コントリビューションや GitHub 上のアクティビティまとめ    Starred repositories  firebase/extensions  google/gts  typestack/typedi  tailwindlabs/tailwi...]]></description>
+            <author>shinsugar@gmail.com (sugarshin | Shingo Sato)</author>
+        </item>
         <item>
             <title><![CDATA[[Monthly report] 2021-01 my activity this month on GitHub]]></title>
             <link>https://blog.sugarshin.net/2021/01/31/monthly-report-2101/</link>
