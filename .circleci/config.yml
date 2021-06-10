@@ -20,6 +20,9 @@ references:
     override-ci-command: *yarn_install
   node_modules_cache_key: &node_modules_cache_key
     v3-node-{{ arch }}-{{ .Branch }}-{{ .Environment.CIRCLE_WORKFLOW_ID }}-{{ checksum "yarn.lock" }}-node-modules
+  git_shallow_clone: &git_shallow_clone
+    name: Checkout
+    command: git clone --depth 1 "${CIRCLE_REPOSITORY_URL}" --branch "${CIRCLE_BRANCH}"
 
 orbs:
   slack: circleci/slack@3.4.2
@@ -68,7 +71,7 @@ jobs:
   test:
     executor: nodejs
     steps:
-      - checkout
+      - run: *git_shallow_clone
       - node/install-packages:
           <<: *node_install_packages_base
       - save_cache:
@@ -87,7 +90,7 @@ jobs:
   build_test:
     executor: nodejs_browsers
     steps:
-      - checkout
+      - run: *git_shallow_clone
       - node/install-packages:
           <<: *node_install_packages_base
           override-ci-command: *yarn_install_prod
@@ -103,7 +106,7 @@ jobs:
   deploy_review_app:
     executor: nodejs_browsers
     steps:
-      - checkout
+      - run: *git_shallow_clone
       - node/install-packages:
           <<: *node_install_packages_base
           override-ci-command: *yarn_install_prod
@@ -152,7 +155,7 @@ jobs:
   e2e_test:
     executor: playwright_base
     steps:
-      - checkout
+      - run: *git_shallow_clone
       - restore_cache:
           name: Restore node_modules cache
           keys:
